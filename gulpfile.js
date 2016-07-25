@@ -81,7 +81,7 @@ gulp.task('testServerJSWithCoverage', function (done) {
         });
 });
 
-gulp.task('testBrowserJS', function (done) {
+gulp.task('testBrowserJS', function (done) { 
     //testing environment variable 
     process.env.NODE_ENV = 'testing';
     karma.start({

@@ -1,4 +1,4 @@
-'use strict';
+ 'use strict';
 
 let router = require('express').Router();
 let db = require('../../db');

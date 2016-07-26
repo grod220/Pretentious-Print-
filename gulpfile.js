@@ -81,7 +81,7 @@ gulp.task('testServerJSWithCoverage', function (done) {
         });
 });
 
-gulp.task('testBrowserJS', function (done) {
+gulp.task('testBrowserJS', function (done) { 
     //testing environment variable 
     process.env.NODE_ENV = 'testing';
     karma.start({
@@ -161,7 +161,7 @@ gulp.task('default', function () {
     gulp.watch(['browser/**/*.html', 'server/app/views/*.html'], ['reload']);
 
     // Run server tests when a server file or server test file changes.
-    gulp.watch(['tests/server/**/*.js'], ['testServerJS']);
+    gulp.watch(['tests/server/**/*.js', 'server/**/*.js'], ['testServerJS']);
 
     // Run browser testing when a browser test file changes.
     gulp.watch('tests/browser/**/*', ['testBrowserJS']);

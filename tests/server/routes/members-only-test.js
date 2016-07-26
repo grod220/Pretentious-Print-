@@ -7,7 +7,7 @@ var db = require('../../../server/db');
 
 var supertest = require('supertest');
 
-describe('Members Route', function () {
+xdescribe('Members Route', function () {
 
     var app, User;
 
@@ -20,7 +20,7 @@ describe('Members Route', function () {
         User = db.model('user');
     });
 
-	describe('Unauthenticated request', function () {
+	xdescribe('Unauthenticated request', function () {
 
 		var guestAgent;
 
@@ -36,7 +36,7 @@ describe('Members Route', function () {
 
 	});
 
-	describe('Authenticated request', function () {
+	xdescribe('Authenticated request', function () {
 
 		var loggedInAgent;
 

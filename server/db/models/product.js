@@ -18,7 +18,8 @@ module.exports = db.define('product', {
         type: Sequelize.STRING,
         validate: {
             isUrl: true
-        }
+        },
+        allowNull: true
     },
     pretentionLevel: {
         type: Sequelize.INTEGER,

@@ -39,7 +39,7 @@ describe('Products Route', function () {
   describe('Existing Products', function () {
 
     var agent;
-
+    var book;
 
     var productInfo = {
       price: 100,
@@ -52,6 +52,7 @@ describe('Products Route', function () {
 
     beforeEach('Create a product', function (done) {
       return Product.create(productInfo).then(function (product) {
+                book = product;
                 done();
             }).catch(done);
     });
@@ -61,7 +62,7 @@ describe('Products Route', function () {
       done();
     });
 
-    it('should get with 200 response and with an array as the body and the correct title', function (done) {
+    it('should get all, with 200 response and with an array as the body and the correct title', function (done) {
       agent.get('/api/products/')
       .expect(200).end(function (err, response) {
         if (err) return done(err);
@@ -69,7 +70,17 @@ describe('Products Route', function () {
         expect(response.body.some(function(product) {
           return product.title === 'a nice book';
         }), 'Expected title not found').to.equal(true)
-        done(); 
+        done();
+      });
+    });
+
+    it('should get one book with 200 response and a book as the body and the correct title', function (done) {
+      agent.get('/api/products/' + book.id)
+      .expect(200).end(function (err, response) {
+        if (err) return done(err);
+        expect(response.body).to.be.an('object');
+        expect(response.body.title).to.equal(book.title);
+        done();
       });
     });
 

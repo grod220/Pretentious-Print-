@@ -2,34 +2,41 @@
 
 let router = require('express').Router();
 let db = require('../../db');
-let Product = db.model('product');
+let Model;
 
-router.get('/', function (req, res, next) {
-  Product.findAll()
+
+router.get('/:model', function (req, res, next) {
+  console.log('--- Got to the get-all generic.  params', req.params);
+  Model = db.model(req.params.model);
+  console.log('--- Found the model', Model);
+  Model.findAll()
   .then(function (products) {
     res.send(products);
   })
   .catch(next);
 });
 
-router.get('/:id', function (req, res, next) {
-  Product.findById(req.params.id)
+router.get('/:model/:id', function (req, res, next) {
+  Model = db.model(req.params.model);
+  Model.findById(req.params.id)
   .then(function (product) {
     res.send(product);
   })
   .catch(next);
 });
 
-router.post('/', function (req, res, next) {
-  Product.create(req.body)
+router.post('/:model', function (req, res, next) {
+  Model = db.model(req.params.model);
+  Model.create(req.body)
   .then(function (result) {
     res.status(201).send(result);
   })
   .catch(next);
 });
 
-router.put('/:id', function (req, res, next) {
-  Product.update(req.body, {
+router.put('/:model/:id', function (req, res, next) {
+  Model = db.model(req.params.model);
+  Model.update(req.body, {
     where: req.params,
     returning: true
   })
@@ -43,8 +50,9 @@ router.put('/:id', function (req, res, next) {
   .catch(next);
 });
 
-router.delete('/:id', function (req, res, next) {
-  Product.destroy({
+router.delete('/:model/:id', function (req, res, next) {
+  Model = db.model(req.params.model);
+  Model.destroy({
     where: req.params
   })
   .then(function (result) {

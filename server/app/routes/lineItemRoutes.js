@@ -1,9 +1,17 @@
  'use strict';
 
-let router = require('express').Router();
-let db = require('../../db');
-let LineItem = db.model('lineItem');
+const router = require('express').Router();
+const db = require('../../db');
+const LineItem = db.model('lineItem');
 
+router.post('/:orderId', function (req, res, next) {});
 
+router.put('/:orderId/:productId', function (req, res, next) {
+  console.log('orderId', req.params.orderId);
+  console.log('productId', req.params.productId);
+  res.end();
+});
+
+router.delete('/:orderId/:productId', function (req, res, next) {});
 
 module.exports = router;

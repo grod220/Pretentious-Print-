@@ -5,6 +5,7 @@ var LocalStrategy = require('passport-local').Strategy;
 module.exports = function (app, db) {
 
     var User = db.model('user');
+    var Order = db.model('order');
 
     // When passport.authenticate('local') is used, this function will receive
     // the email and password to run the actual authentication logic.
@@ -44,10 +45,17 @@ module.exports = function (app, db) {
             // req.logIn will establish our session.
             req.logIn(user, function (loginErr) {
                 if (loginErr) return next(loginErr);
+                // Attach the cart ID to the session object
+                Order.getTheCartId(req.user.id)
+                .then(function(id) {
+                    req.session.cartId = id;
+                    console.log('111  Attached cart ID', req.session.cartId);
+                    res.status(200).send({
+                        user: user.sanitize()
+                    });
+                }).catch(next);
                 // We respond with a response object that has user with _id and email.
-                res.status(200).send({
-                    user: user.sanitize()
-                });
+
             });
 
         };

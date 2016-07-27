@@ -20,9 +20,10 @@ name in the environment files.
 var chalk = require('chalk');
 var db = require('./server/db');
 var User = db.model('user');
+var Product = db.model('product');
 var Promise = require('sequelize').Promise;
 
-var seedUsers = function () {
+var seedStuff = function () {
 
     var users = [
         {
@@ -34,18 +35,30 @@ var seedUsers = function () {
             password: 'potus'
         }
     ];
+    var products = [
+    {
+        title: 'A stupendous book',
+        price: 20.00,
+        author: 'Jane Eyre'
+    }
+    ];
 
     var creatingUsers = users.map(function (userObj) {
         return User.create(userObj);
     });
 
-    return Promise.all(creatingUsers);
+    var creatingProducts = products.map(function(prodObj) {
+        return Product.create(prodObj)
+    });
+
+    var creatingAll = creatingUsers.concat(creatingProducts);
+    return Promise.all(creatingAll);
 
 };
 
 db.sync({ force: true })
     .then(function () {
-        return seedUsers();
+        return seedStuff();
     })
     .then(function () {
         console.log(chalk.green('Seed successful!'));

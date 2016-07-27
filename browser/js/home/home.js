@@ -18,7 +18,7 @@ app.controller('testController', function($scope, $http) {
     console.log('did this work?');
     $http.post('/api/lineItems/1', obj)
     .then(function(result) {
-      alert('You just bought' + result.quantity + ' of ' + result.title);
+      alert('You just bought' + result.quantity + ' of ' + result.title); // OB/MS: check out toast or growl libraries
     })
     .catch(function(error) {
       console.error(error);

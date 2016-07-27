@@ -37,6 +37,7 @@ describe('Products Route', function () {
   describe('Create new Products', function () {
 
    it('should post a book to the database and return us the expected thing', function (done) {
+      // OB/MS: check out supertest-as-promised
       agent.post('/api/products/')
       .send(productInfo)
       .expect(201)
@@ -44,7 +45,7 @@ describe('Products Route', function () {
         if (err) return done(err);
         expect(res.body).to.be.an('object');
         expect(res.body.title).to.equal(productInfo.title);
-        expect(res.body.title).to.equal(productInfo.title);
+        expect(res.body.title).to.equal(productInfo.title); // OB/MS: dups
         done();
       })
     });
@@ -57,7 +58,7 @@ describe('Products Route', function () {
     beforeEach('Create a product', function (done) {
       return Product.create(productInfo).then(function (product) {
                 book = product;
-                done();
+                done(); // OB/MS: drop the dones
             }).catch(done);
     });
 
@@ -67,6 +68,7 @@ describe('Products Route', function () {
       .end(function (err, response) {
         if (err) return done(err);
         expect(response.body).to.be.an('array');
+        // OB/MS: maybe check out chai-things expect(response.body).to.have.a.thing.with.property('title', 'a nice book');
         expect(response.body.some(function(product) {
           return product.title === 'a nice book';
         }), 'Expected title not found').to.equal(true)
@@ -85,7 +87,7 @@ describe('Products Route', function () {
       });
     });
 
-    it('should update the title of a book', function (done) {
+    it('should update the title of a book', function (done) { // OB/MS: I prefer imperative, i.e. drop the 'should's
       let newTitle = 'I am a new title';
       agent.put('/api/products/' + book.id)
       .send({title: newTitle})

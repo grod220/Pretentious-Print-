@@ -12,4 +12,5 @@ Review.belongsTo(User);
 Review.belongsTo(Product);
 Product.hasMany(Review);
 Order.belongsToMany(Product, {through: LineItem});
+// OB/MS: might also want Order.hasMany(LineItem) in order to have methods like order.addLineItem(...) that should e.g. accept a quantity
 Order.belongsTo(User);

@@ -14,14 +14,14 @@ router.get('/', function (req, res, next) {
 
 router.get('/:id', function (req, res, next) {
   Product.findById(req.params.id)
-  .then(function (product) {
+  .then(function (product) { // OB/MS: consider not found
     res.send(product);
   })
   .catch(next);
 });
 
 router.post('/', function (req, res, next) {
-  Product.create(req.body)
+  Product.create(req.body) // OB/MS: watch out for abuse
   .then(function (result) {
     res.status(201).send(result);
   })
@@ -29,11 +29,19 @@ router.post('/', function (req, res, next) {
 });
 
 router.put('/:id', function (req, res, next) {
+  /*
+  OB/MS:
+  Product.findById(req.params.id)
+  .then(function (p) {
+    return p.update(req.body)
+  })
+  .then(...) // etc.
+  */
   Product.update(req.body, {
     where: req.params,
     returning: true
   })
-  .then(function (result) {
+  .then(function (result) { // OB/MS: .spread
     if (result && result[0] > 0) {
       res.send(result[1][0]);
     } else {
@@ -44,6 +52,7 @@ router.put('/:id', function (req, res, next) {
 });
 
 router.delete('/:id', function (req, res, next) {
+  // OB/MS: consider instance method .destroy()
   Product.destroy({
     where: req.params
   })

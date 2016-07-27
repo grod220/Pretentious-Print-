@@ -8,9 +8,9 @@ module.exports = db.define('review', {
         type: Sequelize.STRING
     },
     body: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING // OB/MS: TEXT is arbitrary length
     },
     stars: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER // OB/MS: min/max?
     }
 });

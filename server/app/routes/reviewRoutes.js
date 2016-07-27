@@ -3,6 +3,8 @@ var router = require('express').Router();
 var db = require('../../db');
 var Review = db.model('review');
 
+// OB/MS: maybe go with /api/products/:productId/reviews/:reviewId pattern
+
 // POST one
 router.post('/', function(req,res,next) {
   Review.create(req.body)
@@ -25,6 +27,7 @@ router.get('/:id', function(req,res,next) {
 });
 
 // Fetch one review by ID
+// OB/MS: orphan route handler here
 router.get('/:reviewId', function(req, res, next) {
   Review.findById({
     where: {
@@ -46,7 +49,7 @@ router.put('/:reviewId', function(req, res, next) {
     returning: true
   })
   .then(function(review) {
-    res.send(review[1][0].dataValues);
+    res.send(review[1][0].dataValues); // OB/MS: sequelize will automatically get only the data values when you JSON.stringify which happens when you res.send
   })
 })
 

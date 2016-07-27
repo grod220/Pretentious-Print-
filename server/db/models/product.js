@@ -5,19 +5,19 @@ var db = require('../_db');
 
 module.exports = db.define('product', {
     price: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.DECIMAL, // OB/MS: cents
         allowNull: true
     },
     inventory: {
         type: Sequelize.INTEGER,
         validate: {
-            min: 0
+            min: 0 // OB/MS: <3
         }
     },
     image: {
         type: Sequelize.STRING,
         validate: {
-            isUrl: true
+            isUrl: true // OB/MS: <3<3
         },
         allowNull: true
     },
@@ -25,7 +25,7 @@ module.exports = db.define('product', {
         type: Sequelize.INTEGER,
         validate: {
             min: 1,
-            max: 10
+            max: 10 // OB/MS: clearly you haven't met Peter Lynn :)
         }
     },
     title: {
@@ -38,9 +38,9 @@ module.exports = db.define('product', {
         type: Sequelize.DATE
     },
     description: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING // OB/MS: TEXT is probably best
     },
-    condition: {
+    condition: { // OB/MS: consider enum
         type: Sequelize.STRING
     }
 });

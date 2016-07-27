@@ -2,7 +2,7 @@
 
 let router = require('express').Router();
 let db = require('../../db');
-let Model;
+let Model; // OB/MS: global? watch out for async problems
 
 
 router.get('/:model', function (req, res, next) {

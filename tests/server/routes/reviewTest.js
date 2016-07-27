@@ -20,7 +20,7 @@ describe('Review Route', function () {
     beforeEach('Create app', function () {
         app = require('../../../server/app')(db);
         Review = db.model('review');
-        Product.create({
+        Product.create({ // OB/MS: watch out for async stuff
             price: 65,
             inventory: 20,
             image: 'goodyimages.com/prudentious',

@@ -16,7 +16,7 @@ app.controller('testController', function($scope, $http) {
       quantity: 2
     };
     console.log('did this work?');
-    $http.post('/api/lineItems/1', obj)
+    $http.post('/api/lineItems/null/1', obj)
     .then(function(result) {
       console.log("The result was");
       console.log(result);

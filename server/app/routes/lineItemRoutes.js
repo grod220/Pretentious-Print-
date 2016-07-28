@@ -1,13 +1,13 @@
  'use strict';
 
-const router = require('express').Router();
+const router = require('express').Router({mergeParams: true});
 const db = require('../../db');
 const LineItem = db.model('lineItem');
 const Order = db.model('order');
 const Product = db.model('product');
 let Promise = require('bluebird');
 
-router.post('/:orderId/:productId', function (req, res, next) {
+router.post('/', function (req, res, next) {
 
   let orderId = parseInt(req.params.orderId);
   if (typeof orderId !== "number" || isNaN(orderId)) {
@@ -32,12 +32,12 @@ router.post('/:orderId/:productId', function (req, res, next) {
 
 });
 
-router.put('/:orderId/:productId', function (req, res, next) {
+router.put('/:productId', function (req, res, next) {
   console.log('orderId', req.params.orderId);
   console.log('productId', req.params.productId);
   res.end();
 });
 
-router.delete('/:orderId/:productId', function (req, res, next) {});
+router.delete('/:productId', function (req, res, next) {});
 
 module.exports = router;

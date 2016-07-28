@@ -98,8 +98,6 @@ describe('Review Route', function () {
       ])
       .spread(function(review1,review2) {
       });
-
-
     });
 
     it('retrieves all reviews for product by ID', function (done) {

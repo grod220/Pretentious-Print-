@@ -3,6 +3,9 @@
 let router = require('express').Router();
 let db = require('../../db');
 let Product = db.model('product');
+let Promise = require('bluebird');
+
+router.use('/:productId/reviews', require('./reviewRoutes'));
 
 router.get('/', function (req, res, next) {
   Product.findAll()
@@ -12,8 +15,8 @@ router.get('/', function (req, res, next) {
   .catch(next);
 });
 
-router.get('/:id', function (req, res, next) {
-  Product.findById(req.params.id)
+router.get('/:productId', function (req, res, next) {
+  Product.findById(req.params.productId)
   .then(function (product) {
     res.send(product);
   })
@@ -28,14 +31,14 @@ router.post('/', function (req, res, next) {
   .catch(next);
 });
 
-router.put('/:id', function (req, res, next) {
+router.put('/:productId', function (req, res, next) {
   Product.update(req.body, {
-    where: req.params,
+    where: {id: req.params.productId},
     returning: true
   })
-  .then(function (result) {
-    if (result && result[0] > 0) {
-      res.send(result[1][0]);
+  .spread(function (count, result) {
+    if (count > 0) {
+      res.send(result[0]);
     } else {
       res.sendStatus(404);
     }
@@ -43,15 +46,16 @@ router.put('/:id', function (req, res, next) {
   .catch(next);
 });
 
-router.delete('/:id', function (req, res, next) {
-  Product.destroy({
-    where: req.params
-  })
-  .then(function (result) {
-    if (result > 0) {
-      res.sendStatus(204);
-    } else {
+router.delete('/:productId', function (req, res, next) {
+  Product.findById(req.params.productId)
+  .then(function(result) {
+    if (!result) {
       res.sendStatus(404);
+    } else {
+      result.destroy()
+      .then(function () {
+        res.sendStatus(204);
+      })
     }
   })
   .catch(next);

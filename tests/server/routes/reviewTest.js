@@ -20,7 +20,7 @@ describe('Review Route', function () {
     beforeEach('Create app', function () {
         app = require('../../../server/app')(db);
         Review = db.model('review');
-        Product.create({
+        return Product.create({
             price: 65,
             inventory: 20,
             image: 'goodyimages.com/prudentious',
@@ -60,7 +60,7 @@ describe('Review Route', function () {
     });
 
     it('creates a new review', function (done) {
-      guestAgent.post('/api/reviews/')
+      guestAgent.post('/api/products/' + book.id + '/reviews')
         .send({
           title: 'Awful!@$^',
           body: 'this was no where near pretentious enough. It is tomfoolery. I want a 300% refund, nooooow! And a written apology',
@@ -103,7 +103,7 @@ describe('Review Route', function () {
     });
 
     it('retrieves all reviews for product by ID', function (done) {
-      guestAgent.get('/api/reviews/' + book.id)
+      guestAgent.get('/api/products/' + book.id + '/reviews')
       .expect(200)
       .end(function(err, res) {
         expect(res.body).to.be.instanceof(Array);

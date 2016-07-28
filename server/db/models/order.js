@@ -1,5 +1,6 @@
 'use strict';
 var Sequelize = require('sequelize');
+var Promise = require('bluebird');
 
 var db = require('../_db');
 
@@ -26,13 +27,11 @@ var Order = db.define('order', {
     getTheCartId: function(userId) {
       return Order.findOrCreate(
         {where: {userId: userId, status: 'created'}})
-      .then(function(order) {
-        console.log('2222 Found or created ordr', order[0]);
-        return order[0].id;
+      .spread(function(order) {
+        return order.id;
       })
     }
   }
 }
 );
-
 module.exports = Order;

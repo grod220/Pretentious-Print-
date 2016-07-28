@@ -1,5 +1,5 @@
 'use strict';
-var router = require('express').Router();
+var router = require('express').Router({mergeParams: true});
 var db = require('../../db');
 var Review = db.model('review');
 
@@ -12,10 +12,10 @@ router.post('/', function(req,res,next) {
 });
 
 // Fetch ALL by product ID
-router.get('/:id', function(req,res,next) {
+router.get('/', function(req,res,next) {
   Review.findAll({
     where: {
-      productId: req.params.id
+      productId: req.params.productId
     }
   })
   .then(function(result) {
@@ -54,5 +54,6 @@ router.put('/:reviewId', function(req, res, next) {
 router.delete('/:reviewId', function(req, res, next) {
   // to be set up after sessions
 })
+
 
 module.exports = router;

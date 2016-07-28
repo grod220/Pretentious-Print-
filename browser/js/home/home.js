@@ -16,9 +16,10 @@ app.controller('testController', function($scope, $http) {
       quantity: 2
     };
     console.log('did this work?');
-    $http.post('/api/lineItems/1', obj)
+    $http.post('/api/orders/null/items/1', obj)
     .then(function(result) {
-      alert('You just bought' + result.quantity + ' of ' + result.title);
+      console.log("The result was");
+      console.log(result);
     })
     .catch(function(error) {
       console.error(error);

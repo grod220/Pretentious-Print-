@@ -10,13 +10,16 @@ let User = db.model('user');
 // trigger password reset *ADMIN*
 
 // fetch a single user by ID
-router.get('/:id', function(req,res,next) {
-  User.findById(req.params.id)
+router.get('/:userId', function(req,res,next) {
+  User.findById(req.params.userId)
   .then(function(result) {
     res.send(result);
   })
   .catch(next);
 });
+
+// get all orders & details by UserId
+router.get('/:userId/orders', function (req, res, next) {});
 
 // create a new user
 router.post('/', function(req,res,next) {
@@ -28,10 +31,10 @@ router.post('/', function(req,res,next) {
 });
 
 // update user info
-router.put('/:id', function(req,res,next) {
+router.put('/:userId', function(req,res,next) {
   User.update(req.body, {
     where: {
-      id: req.params.id
+      id: req.params.userId
     },
     returning: true
   })

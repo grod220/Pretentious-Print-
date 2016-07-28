@@ -82,9 +82,15 @@ var seedStuff = function () {
         return Promise.all(creatingReviews);
       })
       .then(function(reviews) {
-
-        console.log(reviews[0]);
-        // random100()
+        var arr = reviews.map(function (review) {
+          review.setUser(random100());
+          review.setProduct(random100());
+          return review.save();
+        });
+        return Promise.all(arr);
+      })
+      .then(function(result) {
+        console.log(result);
       })
       .catch(console.error);
 

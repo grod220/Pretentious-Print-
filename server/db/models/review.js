@@ -8,7 +8,7 @@ module.exports = db.define('review', {
         type: Sequelize.STRING
     },
     body: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
     },
     stars: {
         type: Sequelize.INTEGER

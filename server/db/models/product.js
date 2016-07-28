@@ -38,7 +38,7 @@ module.exports = db.define('product', {
         type: Sequelize.DATE
     },
     description: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
     },
     condition: {
         type: Sequelize.STRING

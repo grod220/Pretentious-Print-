@@ -22,6 +22,8 @@ var db = require('./server/db');
 var User = db.model('user');
 var Product = db.model('product');
 var Review = db.model('review');
+var Order = db.model('order');
+var LineItem = db.model('lineItem');
 
 var Promise = require('sequelize').Promise;
 var fs = require('fs');
@@ -54,6 +56,23 @@ var seedStuff = function () {
         }
     ];
 
+    // var jsonLineItems = fs.readFileSync(path.join(__dirname, './seedData/lineItemsSeed.json'), 'utf-8');
+    // var lineItems = JSON.parse(jsonLineItems);
+    // var creatingLineItems = lineItems.map(function (lineItemObj) {
+    //     return LineItem.create(lineItemObj);
+    // });
+
+    var jsonOrders = fs.readFileSync(path.join(__dirname, './seedData/ordersSeed.json'), 'utf-8');
+    var orders = JSON.parse(jsonOrders);
+    var creatingOrders = orders.map(function (orderObj) {
+        return Order.create(orderObj);
+    });
+
+    var jsonOrders2 = fs.readFileSync(path.join(__dirname, './seedData/ordersSeed-noneActive.json'), 'utf-8');
+    var orders2 = JSON.parse(jsonOrders2);
+    var creatingOrders2 = orders2.map(function (orderObj) {
+        return Order.create(orderObj);
+    });
 
     var jsonReviews = fs.readFileSync(path.join(__dirname, './seedData/reviewsSeed.json'), 'utf-8');
     var reviews = JSON.parse(jsonReviews);
@@ -89,9 +108,37 @@ var seedStuff = function () {
         });
         return Promise.all(arr);
       })
-      .then(function(result) {
-        console.log(result);
+      .then(function() {
+        return Promise.all(creatingOrders);
       })
+      .then(function(orders) {
+        var arr = orders.map(function (order, index) {
+          order.setUser(index+1);
+          return order.save();
+        });
+         return Promise.all(arr);
+      })
+      .then(function() {
+        return Promise.all(creatingOrders2);
+      })
+      .then(function(orders) {
+        var arr = orders.map(function (order, index) {
+          order.setUser(index+1);
+          return order.save();
+        });
+         return Promise.all(arr);
+      })
+      // .then(function() {
+      //   return Promise.all(creatingLineItems);
+      // })
+      // .then(function(lineItems) {
+      //   var arr = lineItems.map(function (lineItem, index) {
+      //     lineItem.setOrder(random100());
+      //     lineItem.setProduct(random100());
+      //     return lineItem.save();
+      //   });
+      //    return Promise.all(arr);
+      // })
       .catch(console.error);
 
 };

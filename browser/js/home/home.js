@@ -1,22 +1,25 @@
 app.config(function ($stateProvider) {
     $stateProvider.state('home', {
         url: '/',
-        templateUrl: 'js/home/home.html',
-        controller: 'testController'
+        templateUrl: 'js/home/products.html',
+        controller: 'homeCtrl'
     });
 });
 
-app.controller('testController', function($scope, $http) {
+app.controller('homeCtrl', function($scope, $http) {
 
-  $scope.title;
-  $scope.description;
+  $scope.quantity;
 
-  $scope.addToCart = function() {
-    var obj = {
-      quantity: 2
-    };
-    console.log('did this work?');
-    $http.post('/api/orders/null/items/1', obj)
+  $http.get('/api/products')
+  .then(function(result) {
+    $scope.products = result.data;
+  })
+
+  $scope.addToCart = function(productId, quantity) {
+
+    $http.post('/api/orders/myleftfoot/items/' + productId, {
+      quantity: quantity
+    })
     .then(function(result) {
       console.log("The result was");
       console.log(result);

@@ -6,20 +6,29 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('homeCtrl', function($scope, $http) {
+app.controller('homeCtrl', function($scope, $http, $log, ProductFactory) {
 
   $scope.quantity;
 
-  $http.get('/api/products')
+  ProductFactory.getAll()
   .then(function(result) {
-    $scope.products = result.data;
+     $scope.products = result;
   })
 
-  $scope.addToCart = function(productId, quantity) {
+  $scope.addToCart = function(productId, quantity){
 
-    $http.post('/api/orders/myleftfoot/items/' + productId, {
-      quantity: quantity
-    })
+  //   OrderFactory.addItem(null, productId, quantity) 
+  //   .then(function(result) {
+  //     console.log("Post the following result to the $scope");
+  //     console.log(result);
+  //   })
+  //   .catch(function(error) {
+  //     console.error(error);
+  //   });
+  // }
+
+     $http.post('/api/orders/myleftfoot/items/' + productId, 
+          {quantity: quantity}) 
     .then(function(result) {
       console.log("The result was");
       console.log(result);
@@ -27,6 +36,6 @@ app.controller('homeCtrl', function($scope, $http) {
     .catch(function(error) {
       console.error(error);
     });
-  };
+    }
 
 });

@@ -31,7 +31,7 @@ router.post('/:productId', function (req, res, next) {
    })
   .then(function(stuff) {
     console.log(stuff);
-    return Order.findById(orderId, {include: [Product]})
+    return Order.findById(orderId);
   })
   .then(function(gizmo) {
     res.send(gizmo);

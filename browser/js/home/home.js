@@ -6,7 +6,7 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('homeCtrl', function($scope, $http, $log, OrderFactory, ProductFactory) {
+app.controller('homeCtrl', function($scope, $http, $log, CartFactory, ProductFactory) {
 
   $scope.quantity;
 
@@ -17,7 +17,7 @@ app.controller('homeCtrl', function($scope, $http, $log, OrderFactory, ProductFa
 
   $scope.addToCart = function(productId, quantity){
 
-    OrderFactory.addItem(null, productId, quantity) 
+    CartFactory.addItem(null, productId, quantity)
     .then(function(result) {
       console.log("Post the following result to the $scope");
       console.log(result);
@@ -27,8 +27,8 @@ app.controller('homeCtrl', function($scope, $http, $log, OrderFactory, ProductFa
     });
   }
 
-    //  $http.post('/api/orders/myleftfoot/items/' + productId, 
-    //       {quantity: quantity}) 
+    //  $http.post('/api/orders/myleftfoot/items/' + productId,
+    //       {quantity: quantity})
     // .then(function(result) {
     //   console.log("The result was");
     //   console.log(result);

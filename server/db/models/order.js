@@ -3,6 +3,7 @@ var Sequelize = require('sequelize');
 var Promise = require('bluebird');
 
 var db = require('../_db');
+var Product = require('./product');
 
 var Order = db.define('order', {
   status: {
@@ -31,6 +32,9 @@ var Order = db.define('order', {
         return order.id;
       })
     }
+  },
+  defaultScope: {
+     include: [Product]
   }
 }
 );

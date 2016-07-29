@@ -49,7 +49,6 @@ module.exports = function (app, db) {
                 Order.getTheCartId(req.user.id)
                 .then(function(id) {
                     req.session.cartId = id;
-                    console.log('111  Attached cart ID', req.session.cartId);
                     res.status(200).send({
                         user: user.sanitize()
                     });

@@ -7,18 +7,26 @@ const Order = db.model('order');
 const Product = db.model('product');
 let Promise = require('bluebird');
 
-router.post('/', function (req, res, next) {
+router.post('/:productId', function (req, res, next) {
 
   let orderId = parseInt(req.params.orderId);
   if (typeof orderId !== "number" || isNaN(orderId)) {
-    orderId = req.session.cartId; 
+    orderId = req.session.cartId;
   }
 
+  console.log("This is the orderId: " + orderId);
+  console.log("Here be the req.params.productId: " + req.params.productId);
+
   let gets = [
-    Order.findById(orderId), 
-    Product.findById(req.params.productId)];
+    Order.findById(orderId),
+    Product.findById(req.params.productId)
+    ];
   Promise.all(gets)
   .spread(function(order, product) {
+    console.log("The order: ", order);
+    console.log("The product: ", product);
+    console.log("Here is the req.body: ", req.body);
+
      return order.addProduct(product, {quantity: req.body.quantity, price: product.price});
    })
   .then(function(stuff) {

@@ -1,29 +1,41 @@
 app.config(function ($stateProvider) {
     $stateProvider.state('home', {
         url: '/',
-        templateUrl: 'js/home/home.html',
-        controller: 'testController'
+        templateUrl: 'js/home/products.html',
+        controller: 'homeCtrl'
     });
 });
 
-app.controller('testController', function($scope, $http) {
+app.controller('homeCtrl', function($scope, $http, $log, OrderFactory, ProductFactory) {
 
-  $scope.title;
-  $scope.description;
+  $scope.quantity;
 
-  $scope.addToCart = function() {
-    var obj = {
-      quantity: 2
-    };
-    console.log('did this work?');
-    $http.post('/api/orders/null/items/1', obj)
+  ProductFactory.getAll()
+  .then(function(result) {
+     $scope.products = result;
+  })
+
+  $scope.addToCart = function(productId, quantity){
+
+    OrderFactory.addItem(null, productId, quantity) 
     .then(function(result) {
-      console.log("The result was");
+      console.log("Post the following result to the $scope");
       console.log(result);
     })
     .catch(function(error) {
       console.error(error);
     });
-  };
+  }
+
+    //  $http.post('/api/orders/myleftfoot/items/' + productId, 
+    //       {quantity: quantity}) 
+    // .then(function(result) {
+    //   console.log("The result was");
+    //   console.log(result);
+    // })
+    // .catch(function(error) {
+    //   console.error(error);
+    // });
+    // }
 
 });

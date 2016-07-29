@@ -4,9 +4,6 @@ const router = require('express').Router();
 const db = require('../../db');
 const Order = db.model('order');
 
-router.use('/:orderId/items', require('./lineItemRoutes'));
-
-
 // get All orders
 router.get('/', function (req, res, next) {});
 

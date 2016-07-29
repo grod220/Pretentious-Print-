@@ -18,7 +18,7 @@ app.factory('ProductFactory', function($http, $log) {
         .then(function(data) {
             return data.data;
         })
-        // .catch($log.error);
+        .catch($log.error);
     };
 
 

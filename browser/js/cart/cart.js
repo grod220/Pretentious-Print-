@@ -6,18 +6,30 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('cartCtrl', function($scope, $http, $log, OrderFactory) {
-
-  $scope.addToCart = function(productId, quantity){
-
-    OrderFactory.addItem(null, productId, quantity)
-    .then(function(result) {
-      console.log("Post the following result to the $scope");
-      console.log(result);
+app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
+  CartFactory.getCart()
+    .then(function (cart) {
+      console.log(cart);
+      $scope.data = cart;
     })
-    .catch(function(error) {
-      console.error(error);
-    });
-  }
+    .catch($log.error);
 
+  $scope.productTotal = function (product) {
+    return product.price * product.quantity / 100;
+  };
+
+  $scope.orderTotal = function () {
+    var total = 0;
+    $scope.data.products.forEach(function (product) {
+      total += product.lineItem.price + product.lineItem.quantity;
+    });
+
+    return total / 100;
+  };
+
+  // $scope.orderTotal = function () {
+  //   return $scope.data.products.reduce(function (prev, curr) {
+  //     return prev + (curr.lineItem.price * curr.lineItem.quantity);
+  //   }, 0) / 100;
+  // };
 });

@@ -1,5 +1,4 @@
 'use strict'
-console.log("In the product factory, app is", app);
 
 //  Factory for Product manipulation
 app.factory('ProductFactory', function($http, $log) {

@@ -6,7 +6,7 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('homeCtrl', function($scope, $http, $log, ProductFactory) {
+app.controller('homeCtrl', function($scope, $http, $log, OrderFactory, ProductFactory) {
 
   $scope.quantity;
 
@@ -17,25 +17,25 @@ app.controller('homeCtrl', function($scope, $http, $log, ProductFactory) {
 
   $scope.addToCart = function(productId, quantity){
 
-  //   OrderFactory.addItem(null, productId, quantity) 
-  //   .then(function(result) {
-  //     console.log("Post the following result to the $scope");
-  //     console.log(result);
-  //   })
-  //   .catch(function(error) {
-  //     console.error(error);
-  //   });
-  // }
-
-     $http.post('/api/orders/myleftfoot/items/' + productId, 
-          {quantity: quantity}) 
+    OrderFactory.addItem(null, productId, quantity) 
     .then(function(result) {
-      console.log("The result was");
+      console.log("Post the following result to the $scope");
       console.log(result);
     })
     .catch(function(error) {
       console.error(error);
     });
-    }
+  }
+
+    //  $http.post('/api/orders/myleftfoot/items/' + productId, 
+    //       {quantity: quantity}) 
+    // .then(function(result) {
+    //   console.log("The result was");
+    //   console.log(result);
+    // })
+    // .catch(function(error) {
+    //   console.error(error);
+    // });
+    // }
 
 });

@@ -22,6 +22,8 @@ var db = require('./server/db');
 var User = db.model('user');
 var Product = db.model('product');
 var Review = db.model('review');
+var Order = db.model('order');
+var LineItem = db.model('lineItem');
 
 var Promise = require('sequelize').Promise;
 var fs = require('fs');
@@ -54,6 +56,17 @@ var seedStuff = function () {
         }
     ];
 
+    var jsonOrders = fs.readFileSync(path.join(__dirname, './seedData/ordersSeed.json'), 'utf-8');
+    var orders = JSON.parse(jsonOrders);
+    var creatingOrders = orders.map(function (orderObj) {
+        return Order.create(orderObj);
+    });
+
+    var jsonOrders2 = fs.readFileSync(path.join(__dirname, './seedData/ordersSeed-noneActive.json'), 'utf-8');
+    var orders2 = JSON.parse(jsonOrders2);
+    var creatingOrders2 = orders2.map(function (orderObj) {
+        return Order.create(orderObj);
+    });
 
     var jsonReviews = fs.readFileSync(path.join(__dirname, './seedData/reviewsSeed.json'), 'utf-8');
     var reviews = JSON.parse(jsonReviews);
@@ -69,19 +82,31 @@ var seedStuff = function () {
 
     var jsonProducts = fs.readFileSync(path.join(__dirname, './seedData/productsSeed.json'), 'utf-8');
     var products = JSON.parse(jsonProducts);
+    products.forEach(function (product, index) {
+      product.image = 'http://lorempixel.com/300/' + (index + 400) + '/';
+    });
     var creatingProducts = products.map(function(prodObj) {
         return Product.create(prodObj);
     });
 
-    // var creatingAll = creatingUsers.concat(creatingProducts);
+    var jsonLineItems = fs.readFileSync(path.join(__dirname, './seedData/lineItemsSeed.json'), 'utf-8');
+    var lineItems = JSON.parse(jsonLineItems);
+    lineItems.forEach(function (lineItem) {
+      lineItem.orderId = random100();
+      lineItem.productId = random100();
+    });
+    var creatingLineItems = lineItems.map(function (lineItemObj) {
+        return LineItem.create(lineItemObj);
+    });
+
     return Promise.all(creatingUsers)
       .then(function (users) {
         return Promise.all(creatingProducts);
       })
-      .then(function(products) {
+      .then(function (products) {
         return Promise.all(creatingReviews);
       })
-      .then(function(reviews) {
+      .then(function (reviews) {
         var arr = reviews.map(function (review) {
           review.setUser(random100());
           review.setProduct(random100());
@@ -89,8 +114,31 @@ var seedStuff = function () {
         });
         return Promise.all(arr);
       })
-      .then(function(result) {
-        console.log(result);
+      .then(function() {
+        return Promise.all(creatingOrders);
+      })
+      .then(function (orders) {
+        var arr = orders.map(function (order, index) {
+          order.setUser(index+1);
+          return order.save();
+        });
+         return Promise.all(arr);
+      })
+      .then(function () {
+        return Promise.all(creatingOrders2);
+      })
+      .then(function (orders) {
+        var arr = orders.map(function (order, index) {
+          order.setUser(index+1);
+          return order.save();
+        });
+         return Promise.all(arr);
+      })
+      .then(function() {
+        return Promise.all(creatingLineItems);
+      })
+      .then(function () {
+        /* do nothing? */
       })
       .catch(console.error);
 

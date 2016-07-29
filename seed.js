@@ -56,12 +56,6 @@ var seedStuff = function () {
         }
     ];
 
-    // var jsonLineItems = fs.readFileSync(path.join(__dirname, './seedData/lineItemsSeed.json'), 'utf-8');
-    // var lineItems = JSON.parse(jsonLineItems);
-    // var creatingLineItems = lineItems.map(function (lineItemObj) {
-    //     return LineItem.create(lineItemObj);
-    // });
-
     var jsonOrders = fs.readFileSync(path.join(__dirname, './seedData/ordersSeed.json'), 'utf-8');
     var orders = JSON.parse(jsonOrders);
     var creatingOrders = orders.map(function (orderObj) {
@@ -88,19 +82,31 @@ var seedStuff = function () {
 
     var jsonProducts = fs.readFileSync(path.join(__dirname, './seedData/productsSeed.json'), 'utf-8');
     var products = JSON.parse(jsonProducts);
+    products.forEach(function (product, index) {
+      product.image = 'http://lorempixel.com/300/' + (index + 400) + '/';
+    });
     var creatingProducts = products.map(function(prodObj) {
         return Product.create(prodObj);
     });
 
-    // var creatingAll = creatingUsers.concat(creatingProducts);
+    var jsonLineItems = fs.readFileSync(path.join(__dirname, './seedData/lineItemsSeed.json'), 'utf-8');
+    var lineItems = JSON.parse(jsonLineItems);
+    lineItems.forEach(function (lineItem) {
+      lineItem.orderId = random100();
+      lineItem.productId = random100();
+    });
+    var creatingLineItems = lineItems.map(function (lineItemObj) {
+        return LineItem.create(lineItemObj);
+    });
+
     return Promise.all(creatingUsers)
       .then(function (users) {
         return Promise.all(creatingProducts);
       })
-      .then(function(products) {
+      .then(function (products) {
         return Promise.all(creatingReviews);
       })
-      .then(function(reviews) {
+      .then(function (reviews) {
         var arr = reviews.map(function (review) {
           review.setUser(random100());
           review.setProduct(random100());
@@ -111,7 +117,17 @@ var seedStuff = function () {
       .then(function() {
         return Promise.all(creatingOrders);
       })
-      .then(function(orders) {
+      .then(function (orders) {
+        var arr = orders.map(function (order, index) {
+          order.setUser(index+1);
+          return order.save();
+        });
+         return Promise.all(arr);
+      })
+      .then(function () {
+        return Promise.all(creatingOrders2);
+      })
+      .then(function (orders) {
         var arr = orders.map(function (order, index) {
           order.setUser(index+1);
           return order.save();
@@ -119,26 +135,11 @@ var seedStuff = function () {
          return Promise.all(arr);
       })
       .then(function() {
-        return Promise.all(creatingOrders2);
+        return Promise.all(creatingLineItems);
       })
-      .then(function(orders) {
-        var arr = orders.map(function (order, index) {
-          order.setUser(index+1);
-          return order.save();
-        });
-         return Promise.all(arr);
+      .then(function () {
+        /* do nothing? */
       })
-      // .then(function() {
-      //   return Promise.all(creatingLineItems);
-      // })
-      // .then(function(lineItems) {
-      //   var arr = lineItems.map(function (lineItem, index) {
-      //     lineItem.setOrder(random100());
-      //     lineItem.setProduct(random100());
-      //     return lineItem.save();
-      //   });
-      //    return Promise.all(arr);
-      // })
       .catch(console.error);
 
 };

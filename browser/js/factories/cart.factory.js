@@ -13,13 +13,13 @@ app.factory('CartFactory', function($http, $log) {
         .catch($log.error);
     };
 
-    factory.addItem = function(cart, product, qty) {
+    factory.addItem = function(product, qty) {
         return $http.post(baseRoute,
             {productId: product, quantity: qty})
         .then(function(res) {
             return res.data;
         })
-        .catch($log.error)
+        .catch($log.error);
     };
 
     factory.removeItem = function (productId) {

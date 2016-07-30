@@ -34,7 +34,9 @@ router.post('/', function (req, res, next) {
 
 });
 
-router.put('/:productId', function (req, res, next) {});
+// not needed. Using above to overwrite if updating lineitem.
+// router.put('/:productId', function (req, res, next) {
+// });
 
 router.delete('/product/:productId', function (req, res, next) {
   var arr = [
@@ -47,7 +49,7 @@ router.delete('/product/:productId', function (req, res, next) {
       return order.removeProduct(product);
     })
     .then(function () {
-      res.send(204)
+      res.send(204);
     })
     .catch(next);
 });

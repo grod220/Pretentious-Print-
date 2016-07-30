@@ -1,0 +1,26 @@
+<section>
+
+  <div id="product" class="panel">
+    <h4 class="panel-heading">{{ data.title }}</h4>
+    <ul>
+      <li><img ng-src="{{ data.image }}"></li>
+      <li>Author: {{ data.author }}</li>
+      <li>Pretention Level: {{ data.pretentionLevel }}</li>
+      <li>Publication Date: {{ data.datePublished | date : 'longDate' }}</li>
+      <li>Description: {{ data.description }}</li>
+      <li>Price: {{ product.price / 100 | currency }} each</li>
+    </ul>
+    <button ng-click="addToCart(data.id, quantity)">Add to Cart</button>
+    <input type="number" ng-model="quantity" min="1" required>
+    <h4>User Reviews</h4>
+    <table ng-repeat="review in data.reviews" ng-show="data.reviews.length" class="table table-condensed table-hover">
+      <tbody>
+        <tr><td>{{ review.title }}</td></tr>
+        <tr><td>User: {{ review.user.userName }}</td></tr>
+        <tr><td>Review: {{ review.body }}</td></tr>
+        <tr><td>Rating: {{ review.stars }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>

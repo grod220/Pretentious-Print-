@@ -37,8 +37,6 @@ var Order = db.define('order', {
       return Order.findOrCreate(
         {where: {userId: userId, status: 'created'}})
       .spread(function(order, crt) {
-        console.log("------- For user", userId, 'returned order', order.id,
-            'Created:', crt);
         return order.id;
       })
     }

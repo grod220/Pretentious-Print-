@@ -9,35 +9,33 @@ app.factory('ProductFactory', function($http, $log) {
 
     factory.getOne = function(id) {
         return $http.get(baseRoute + id.toString())
-        .then(toData)
-        .catch($log.error);
+        .then(toData);
     };
 
     factory.getAll = function() {
         return $http.get(baseRoute)
-        .then(function(data) {
-            return data.data;
-        })
-        .catch($log.error);
+        .then(toData);
     };
 
 
     factory.destroy = function(id) {
         return $http.delete(baseRoute + id.toString())
-        .then(toData)
-        .catch($log.error);
+        .then(toData);
     };
 
     factory.add = function(prod) {
         return $http.post(baseRoute, prod)
-        .then(toData)
-        .catch($log.error);
+        .then(toData);
     };
 
     factory.update = function(id, updata) {
         return $http.put(baseRoute + id.toString(), updata)
-        .then(toData)
-        .catch($log.error);
+        .then(toData);
+    };
+
+    factory.getReviews = function(id) {
+        return $http.get(baseRoute + id.toString() + '/reviews')
+        .then(toData);
     };
 
 

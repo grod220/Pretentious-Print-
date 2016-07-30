@@ -15,7 +15,7 @@
           <td>{{ product.title | uppercase }}</td>
           <td>{{ product.author | uppercase }}</td>
           <td>{{ product.lineItem.price / 100 | currency }}</td>
-          <td><input type="text" name="quantity" ng-init="newQty='{{ product.lineItem.quantity }}'" value="{{ product.lineItem.quantity }}" ng-model="newQty" ng-change="changeQuantity(product.id, newQty)"></td>
+          <td><input min="1" type="number" name="quantity" value="{{ product.lineItem.quantity }}" ng-blur="changeQuantity(product.id, newQty)"></td>
           <td>{{ product.lineItem.total / 100 | currency }}</td>
           <td><button type="button" class="btn btn-primary" ng-click="removeItem(product.id)">Remove</button></td>
         </tr>
@@ -27,3 +27,5 @@
   </div>
 
 </section>
+
+<!-- ng-model="newQty"  -->

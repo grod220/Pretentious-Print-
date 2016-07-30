@@ -5,10 +5,15 @@ var db = require('../_db');
 
 var LineItem = db.define('lineItem', {
   quantity: {
-    type: Sequelize.INTEGER
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    validate: {
+        min: 1
+    }
   },
   price: {
-    type: Sequelize.INTEGER
+    type: Sequelize.INTEGER,
+    allowNull: false
   },
   total: {
     type: Sequelize.VIRTUAL,

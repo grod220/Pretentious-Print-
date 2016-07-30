@@ -8,7 +8,7 @@ var Product = require('./product');
 var Order = db.define('order', {
   status: {
     type: Sequelize.ENUM('created','processing', 'canceled','completed'),
-    default: 'created'
+    defaultValue: 'created'
   },
   date: {
     type: Sequelize.DATE
@@ -36,7 +36,9 @@ var Order = db.define('order', {
     getTheCartId: function(userId) {
       return Order.findOrCreate(
         {where: {userId: userId, status: 'created'}})
-      .spread(function(order) {
+      .spread(function(order, crt) {
+        console.log("------- For user", userId, 'returned order', order.id,
+            'Created:', crt);
         return order.id;
       })
     }

@@ -20,7 +20,9 @@
           <td><button type="button" class="btn btn-primary" ng-click="removeItem(product.id)">Remove</button></td>
         </tr>
         <tr>
-          <td></td><td></td><td></td><td></td><td><h4>Cart total:</h4></td><td>{{ data.total / 100 | currency }}</td><td></td>
+          <td></td><td></td><td></td><td></td><td><h4>Cart total:</h4></td><td>{{ data.total / 100 | currency }}</td><td>
+            <button type="button" class="btn btn-warning" ng-click="toCheckout()">Proceed to checkout</button>
+          </td>
         </tr>
       </tbody>
     </table>

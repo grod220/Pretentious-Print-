@@ -1,0 +1,51 @@
+<section>
+
+  <div id="checkout" class="panel">
+    <h4 class="panel-heading">Order Checkout</h4>
+    <h4 ng-show="!data.products.length">Cart is Empty</h4>
+
+
+    <div class="payment-entry col-xs-4">
+        <form novalidate class="simple-form" ng-submit="placeOrder()" name="checkoutForm">
+        <table class="table">
+          <col width="15%">
+          <col width="85%">
+          <tr><td>Name</td><td><input type="text" ng-model="buyer.name" ng-required="true"/></td></tr>
+          <tr><td>E-mail</td><td><input type="email" ng-model="buyer.email" ng-required="true"/></td></tr>
+          <tr><td>Street address</td><td><input type="text" ng-model="buyer.street" ng-required="true"/></td></tr>
+          <tr><td>City</td><td><input type="text" ng-model="buyer.city" ng-required="true"/></td></tr>
+          <tr><td>State</td><td><input type="text" ng-model="buyer.state" ng-required="true" /></td></tr>
+          <tr><td>Zip</td><td><input type="text" ng-model="buyer.zip"  ng-pattern="zipPattern" ng-required="true"/></td></tr>
+       </table>
+       <button type="submit" class="btn btn-success" ng-disabled="checkoutForm.$invalid">Submit</button>
+      </form>
+    </div>
+    <div class="col-xs-4">
+    </div>
+    <div class="summary-cart col-xs-4">
+    <table ng-show="data.products.length" class="table table-striped table-condensed table-hover">
+      <thead>
+        <tr>
+          <th>Title</th><th>Author</th><th>Price</th><th>Quantity</th><th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="product in data.products">
+          <td>{{ product.title | uppercase }}</td>
+          <td>{{ product.author | uppercase }}</td>
+          <td>{{ product.lineItem.price / 100 | currency }}</td>
+          <td>{{ product.lineItem.quantity }}</td>
+          <td>{{ product.lineItem.total / 100 | currency }}</td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td><h4>Cart total:</h4></td><td>{{ data.total / 100 | currency }}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    </div>
+
+ 
+  </div>
+
+</section>

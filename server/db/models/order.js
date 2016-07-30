@@ -21,6 +21,14 @@ var Order = db.define('order', {
   },
   notificationEmail: {
     type: Sequelize.STRING
+  },
+  total: {
+    type: Sequelize.VIRTUAL,
+    get: function () {
+      return this.products.reduce(function (prev, curr) {
+        return prev + curr.lineItem.total;
+      }, 0);
+    }
   }
 },
 {

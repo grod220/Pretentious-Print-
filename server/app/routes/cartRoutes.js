@@ -34,8 +34,24 @@ router.post('/', function (req, res, next) {
 
 });
 
-router.put('/:productId', function (req, res, next) {});
+// not needed. Using above to overwrite if updating lineitem.
+// router.put('/:productId', function (req, res, next) {
+// });
 
-router.delete('/:productId', function (req, res, next) {});
+router.delete('/product/:productId', function (req, res, next) {
+  var arr = [
+    Order.findById(req.session.cartId),
+    Product.findById(req.params.productId)
+  ];
+
+  Promise.all(arr)
+    .spread(function (order, product) {
+      return order.removeProduct(product);
+    })
+    .then(function () {
+      res.send(204);
+    })
+    .catch(next);
+});
 
 module.exports = router;

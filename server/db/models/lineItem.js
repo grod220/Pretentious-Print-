@@ -13,7 +13,13 @@ var LineItem = db.define('lineItem', {
   },
   price: {
     type: Sequelize.INTEGER,
-    allowNull: false,
+    allowNull: false
+  },
+  total: {
+    type: Sequelize.VIRTUAL,
+    get: function () {
+      return this.getDataValue('price') * this.getDataValue('quantity');
+    }
   }
 });
 

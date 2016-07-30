@@ -6,18 +6,27 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('cartCtrl', function($scope, $http, $log, OrderFactory) {
-
-  $scope.addToCart = function(productId, quantity){
-
-    OrderFactory.addItem(null, productId, quantity)
-    .then(function(result) {
-      console.log("Post the following result to the $scope");
-      console.log(result);
+app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
+  // $scope.newQty = 0;
+  var getData = function () {
+    CartFactory.getCart()
+    .then(function (cart) {
+      $scope.data = cart;
     })
-    .catch(function(error) {
-      console.error(error);
-    });
-  }
+    .catch($log.error);
+  };
 
+  getData();
+
+  $scope.removeItem = function (productId) {
+    CartFactory.removeItem(productId)
+      .then(getData)
+      .catch($log.error);
+  };
+
+  $scope.changeQuantity = function (productId, newQuantity) {
+    CartFactory.addItem(productId, newQuantity)
+    .then(getData)
+    .catch($log.error);
+  };
 });

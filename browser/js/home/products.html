@@ -15,7 +15,7 @@
           </h5>
             <small>Price: {{ (product.price / 100).toFixed(2) }} each</small>
             <button ng-click="addToCart(product.id, quantity)">Add to Cart</button>
-            <input type="number" ng-model="quantity" min="1">
+            <input type="number" ng-model="quantity" min="1" required>
         </div>
       </div>
     </div>

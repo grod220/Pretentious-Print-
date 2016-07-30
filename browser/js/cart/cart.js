@@ -6,19 +6,20 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('cartCtrl', function($scope, $state, $http, $log, CartFactory) {
-  CartFactory.getCart()
+app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
+  var getData = function () {
+    CartFactory.getCart()
     .then(function (cart) {
-      console.log(cart);
       $scope.data = cart;
     })
     .catch($log.error);
+  };
+
+  getData();
 
   $scope.removeItem = function (productId) {
     CartFactory.removeItem(productId)
-      .then(function (result) {
-        $state.go('cart');
-      })
+      .then(getData)
       .catch($log.error)
   };
 });

@@ -6,7 +6,7 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
+app.controller('cartCtrl', function($scope, $state, $http, $log, CartFactory) {
   // $scope.newQty = 0;
   var getData = function () {
     CartFactory.getCart()
@@ -17,7 +17,7 @@ app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
   };
 
   getData();
-
+  
   $scope.removeItem = function (productId) {
     CartFactory.removeItem(productId)
       .then(getData)
@@ -28,5 +28,10 @@ app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
     CartFactory.addItem(productId, newQuantity)
     .then(getData)
     .catch($log.error);
-  };
+  };  
+
+  $scope.toCheckout = function() {
+    console.log("I am doing the $state.go to checkout")
+    $state.go('checkout');
+  }
 });

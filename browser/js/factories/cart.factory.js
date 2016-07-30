@@ -22,5 +22,11 @@ app.factory('CartFactory', function($http, $log) {
         .catch($log.error)
     };
 
+    factory.removeItem = function (productId) {
+      return $http.delete(baseRoute + 'product/' + productId)
+        .then(toData)
+        .catch($log.error);
+    };
+
     return factory;
 });

@@ -6,7 +6,7 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
+app.controller('cartCtrl', function($scope, $state, $http, $log, CartFactory) {
   CartFactory.getCart()
     .then(function (cart) {
       console.log(cart);
@@ -14,18 +14,11 @@ app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
     })
     .catch($log.error);
 
-  $scope.orderTotal = function () {
-    var total = 0;
-    $scope.data.products.forEach(function (product) {
-      total += product.lineItem.price + product.lineItem.quantity;
-    });
-
-    return total / 100;
+  $scope.removeItem = function (productId) {
+    CartFactory.removeItem(productId)
+      .then(function (result) {
+        $state.go('cart');
+      })
+      .catch($log.error)
   };
-
-  // $scope.orderTotal = function () {
-  //   return $scope.data.products.reduce(function (prev, curr) {
-  //     return prev + (curr.lineItem.price * curr.lineItem.quantity);
-  //   }, 0) / 100;
-  // };
 });

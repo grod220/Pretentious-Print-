@@ -14,10 +14,6 @@ app.controller('cartCtrl', function($scope, $http, $log, CartFactory) {
     })
     .catch($log.error);
 
-  $scope.productTotal = function (product) {
-    return product.price * product.quantity / 100;
-  };
-
   $scope.orderTotal = function () {
     var total = 0;
     $scope.data.products.forEach(function (product) {

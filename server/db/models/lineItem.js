@@ -9,6 +9,12 @@ var LineItem = db.define('lineItem', {
   },
   price: {
     type: Sequelize.INTEGER
+  },
+  total: {
+    type: Sequelize.VIRTUAL,
+    get: function () {
+      return this.getDataValue('price') * this.getDataValue('quantity');
+    }
   }
 });
 

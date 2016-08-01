@@ -31,7 +31,6 @@ app.controller('cartCtrl', function($scope, $state, $http, $log, CartFactory) {
   };  
 
   $scope.toCheckout = function() {
-    console.log("I am doing the $state.go to checkout")
     $state.go('checkout');
   }
 });

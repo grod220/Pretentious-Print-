@@ -40,11 +40,9 @@ router.post('/', function (req, res, next) {
 router.post('/submitCC', function(req, res, next) {
   stripe.charges.create(req.body) 
   .then(function(charge) {
-    console.log('+++ Success from charge, returned object is', charge);
     res.send(charge);
   })
   .catch(function(err) {
-    console.log('+++ Failure from charge, returned object is', err);
     res.status(401).send(err);
   })
 })

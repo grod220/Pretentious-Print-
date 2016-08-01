@@ -21,7 +21,6 @@ app.controller('productPageCtrl', function($scope, $log, ProductFactory, $stateP
   })
   .then(function(reviews) {
     $scope.data.reviews = reviews;
-    console.log($scope.data.reviews);
   })
   .catch($log.error);
 

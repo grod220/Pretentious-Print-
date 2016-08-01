@@ -31,10 +31,11 @@ app.factory('CartFactory', function($http, $log) {
     factory.getCcAuth = function(stripeObj) {
         return $http.post(baseRoute + '/submitCC', stripeObj)
         .then(function(res) {;
-            console.log(',,, In the auth factory, got', res)
-            return res.data;
+            return res;
         })
-        .catch($log.error);
+        .catch(function (err) {
+            return err;
+        });
     };
 
     return factory;

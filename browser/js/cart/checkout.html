@@ -25,7 +25,7 @@
          <tr><td>Expiration year</td><td><input type="number" ng-model="buyer.expyr" ng-required="true" /></td></tr>
          <tr><td>cvc</td><td><input type="text" ng-model="buyer.cvc" ng-required="true" /></td></tr>
        </table>
-       <button type="submit" class="btn btn-success" ng-disabled="checkoutForm.$invalid">Submit</button>
+       <button type="submit" class="btn btn-success" ng-disabled="checkoutForm.$invalid || inProcess">Submit</button>
       </form>
     </div>
     <div class="col-xs-4">

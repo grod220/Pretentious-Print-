@@ -6,9 +6,7 @@ let Model;
 
 
 router.get('/:model', function (req, res, next) {
-  console.log('--- Got to the get-all generic.  params', req.params);
   Model = db.model(req.params.model);
-  console.log('--- Found the model', Model);
   Model.findAll()
   .then(function (products) {
     res.send(products);

@@ -14,23 +14,15 @@ router.post('/:productId', function (req, res, next) {
     orderId = req.session.cartId;
   }
 
-  console.log("This is the orderId: " + orderId);
-  console.log("Here be the req.params.productId: " + req.params.productId);
-
   let gets = [
     Order.findById(orderId),
     Product.findById(req.params.productId)
     ];
   Promise.all(gets)
   .spread(function(order, product) {
-    console.log("The order: ", order);
-    console.log("The product: ", product);
-    console.log("Here is the req.body: ", req.body);
-
      return order.addProduct(product, {quantity: req.body.quantity, price: product.price});
    })
   .then(function(stuff) {
-    console.log(stuff);
     return Order.findById(orderId);
   })
   .then(function(gizmo) {
@@ -41,8 +33,6 @@ router.post('/:productId', function (req, res, next) {
 });
 
 router.put('/:productId', function (req, res, next) {
-  console.log('orderId', req.params.orderId);
-  console.log('productId', req.params.productId);
   res.end();
 });
 

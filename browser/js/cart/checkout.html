@@ -1,5 +1,6 @@
 <section>
 
+<div growl></div>
   <div id="checkout" class="panel">
     <h4 class="panel-heading">Order Checkout</h4>
     <h4 ng-show="!data.products.length">Cart is Empty</h4>
@@ -16,6 +17,11 @@
           <tr><td>City</td><td><input type="text" ng-model="buyer.city" ng-required="true"/></td></tr>
           <tr><td>State</td><td><input type="text" ng-model="buyer.state" ng-required="true" /></td></tr>
           <tr><td>Zip</td><td><input type="text" ng-model="buyer.zip"  ng-pattern="zipPattern" ng-required="true"/></td></tr>
+          <tr><td> </td><td> </td></tr>
+          <tr><td>Credit Card Number</td><td><input type="number" ng-model="buyer.card" ng-required="true" /></td></tr>
+         <tr><td>Expiration month</td><td><input type="number" ng-model="buyer.expmo" ng-required="true" /></td></tr>
+         <tr><td>Expiration year</td><td><input type="number" ng-model="buyer.expyr" ng-required="true" /></td></tr>
+         <tr><td>cvc</td><td><input type="text" ng-model="buyer.cvc" ng-required="true" /></td></tr>
        </table>
        <button type="submit" class="btn btn-success" ng-disabled="checkoutForm.$invalid">Submit</button>
       </form>

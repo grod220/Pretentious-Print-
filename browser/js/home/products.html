@@ -4,15 +4,15 @@
     <div class="row">
       <label>Author:
         <select ng-model="selectedAuthor">
-          <option ng-repeat="product in products | uniqueAuthor | orderBy:'author'">{{ product.author }}</select>
+          <option ng-repeat="product in products | unique:'author' | orderBy:'author'">{{ product.author }}</select>
       </label>
       <label>Pretentiousness:
         <select ng-model="selectedPretention">
-          <option ng-repeat="product in products | uniquePretention | orderBy:'pretentionLevel'">{{ product.pretentionLevel }}</select>
+          <option ng-repeat="product in products | unique:'pretentionLevel' | orderBy:'pretentionLevel'">{{ product.pretentionLevel }}</select>
       </label>
       <label>Condition:
         <select ng-model="selectedCondition">
-          <option ng-repeat="product in products | uniqueCondition | orderBy:'condition'">{{ product.condition }}</select>
+          <option ng-repeat="product in products | unique:'condition' | orderBy:'condition'">{{ product.condition }}</select>
       </label>
     </div>
     <h1>Available Titles</h1>

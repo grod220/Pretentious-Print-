@@ -20,64 +20,14 @@ app.controller('homeCtrl', function($scope, $http, $log, CartFactory, ProductFac
 
 });
 
-app.filter('authorFilter', function() {
-  return function(products, author) {
-    if (!author) {
-      return products;
-    }
-
-    return products.filter(function(product) {
-      return product.author === author;
-    });
-  }
-});
-
-app.filter('uniqueAuthor', function() {
-  return function(products) {
+app.filter('unique', function() {
+  return function(products, property) {
     if (products === undefined) { return; }
     var output = [];
     products.forEach(function(product) {
       var add = true;
       for (var i = 0; i < output.length; i++) {
-        if (output[i].author === product.author) {
-          add = false;
-        }
-      }
-      if (add) {
-        output.push(product);
-      }
-    });
-    return output;
-  }
-});
-
-app.filter('uniquePretention', function() {
-  return function(products) {
-    if (products === undefined) { return; }
-    var output = [];
-    products.forEach(function(product) {
-      var add = true;
-      for (var i = 0; i < output.length; i++) {
-        if (output[i].pretentionLevel === product.pretentionLevel) {
-          add = false;
-        }
-      }
-      if (add) {
-        output.push(product);
-      }
-    });
-    return output;
-  }
-});
-
-app.filter('uniqueCondition', function() {
-  return function(products) {
-    if (products === undefined) { return; }
-    var output = [];
-    products.forEach(function(product) {
-      var add = true;
-      for (var i = 0; i < output.length; i++) {
-        if (output[i].condition === product.condition) {
+        if (output[i][property] === product[property]) {
           add = false;
         }
       }

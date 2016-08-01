@@ -12,7 +12,7 @@
       </label>
       <label>Condition:
         <select ng-model="selectedCondition">
-          <option ng-repeat="product in products | orderBy:'condition'">{{ product.condition }}</select>
+          <option ng-repeat="product in products | uniqueCondition | orderBy:'condition'">{{ product.condition }}</select>
       </label>
     </div>
     <h1>Available Titles</h1>

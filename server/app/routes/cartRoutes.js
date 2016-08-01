@@ -18,7 +18,6 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-
   let gets = [
     Order.findById(req.session.cartId),
     Product.findById(req.body.productId)
@@ -37,14 +36,24 @@ router.post('/', function (req, res, next) {
 
 });
 
-router.post('/submitCC', function(req, res, next) {
-  stripe.charges.create(req.body) 
+router.post('/commitOrder', function(req, res, next) {
+  stripe.charges.create(req.body.stripeObj) 
   .then(function(charge) {
-    res.send(charge);
+    console.log('=========  Ready to post updates  =========');
+    console.log(req.body.upObj);
+    return Order.findById(req.session.cartId)
+  })
+  .then(function(ord) {
+    console.log("------- Got order  -------", ord.id)
+    return ord.update(req.body.upObj)
+  })
+  .then (function(reslt) {
+    console.log("....... Update result was", reslt)
+    res.status(200).send(reslt);
   })
   .catch(function(err) {
     res.status(401).send(err);
-  })
+  })  
 })
 
 

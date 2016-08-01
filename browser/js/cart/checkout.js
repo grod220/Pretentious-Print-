@@ -38,26 +38,32 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl)
       },
       description: "Charge for test@pretentiousprint.com",
     }
+    let upObj = {
+      stripeAuthorization: JSON.stringify(stripeObj),
+      status: 'processing',
+      name: $scope.name,
+      date: Date.now(),
+      shippingAddress: $scope.buyer.street,
+      shippingCity: $scope.buyer.city,
+      shippingState: $scope.buyer.state,
+      shippingZip: $scope.buyer.zip,
+      notificationEmail: $scope.buyer.email
+    }
 
-    CartFactory.getCcAuth(stripeObj)
+    CartFactory.commitOrder(stripeObj, upObj)
     .then(function (res) {
       if (res.status !== 200) {
-        growl.error(res.data.message, {title: res.data.code,ttl: 3000, disableCountDown: true})
+        console.log('RETURNED bad status object is ', res);
+//        growl.error(res.data.message, {title: res.data.code,ttl: 3000, disableCountDown: true});
+
       } else {
-        growl.success("The credit card info was accepted", {ttl: 3000, disableCountDown: true});
-        commitOrder(res.data)
+        console.log('RETURNED GOOD status object is ', res);
+ //       growl.success("The credit card info was accepted", {ttl: 3000, disableCountDown: true});
+//        growl.success("Your order has been completed.", {ttl: 3000, disableCountDown: true});
+        
       }
     })
   };
-
-  CartFactory.commitOrder = function(authObj) {
-    // Set cart status to processing; no longer updateable
-    let upObj = {
-      stripeAuthorization: JSON.stringify(authObj),
-      status: 'processing',
-      
-    }
-  }
 
 
 });

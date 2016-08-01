@@ -11,12 +11,21 @@ var Order = db.define('order', {
     defaultValue: 'created'
   },
   name: {
-    type: Sequelize.string,
+    type: Sequelize.STRING,
   },
   date: {
     type: Sequelize.DATE
   },
   shippingAddress: {
+    type: Sequelize.STRING
+  },
+  shippingCity: {
+    type: Sequelize.STRING
+  },
+  shippingState: {
+    type: Sequelize.STRING
+  },
+  shippingZip: {
     type: Sequelize.STRING
   },
   billingAddress: {

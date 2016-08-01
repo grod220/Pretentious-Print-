@@ -13,6 +13,7 @@ module.exports = function (config) {
         'public/main.js',
         'node_modules/sinon/pkg/sinon.js',
         'node_modules/angular-mocks/angular-mocks.js',
+        'node_modules/angular-growl-v2/build/angular-growl.js',
         'tests/browser/**/*.js'
     ];
 

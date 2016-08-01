@@ -28,12 +28,15 @@ app.factory('CartFactory', function($http, $log) {
         .catch($log.error);
     };
 
-    factory.getCcAuth = function(stripeObj) {
-        return $http.post(baseRoute + '/submitCC', stripeObj)
-        .then(function(res) {;
+    factory.commitOrder = function(stripeObj, upObj) {
+        let args={stripeObj: stripeObj, upObj: upObj}
+        return $http.post(baseRoute + '/commitOrder', args)
+        .then(function(res) {
+            console.log(">> cartFactory is returning", res)
             return res;
         })
         .catch(function (err) {
+            console.log(">> cartFactory is erroring", err)
             return err;
         });
     };

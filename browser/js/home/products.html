@@ -1,9 +1,12 @@
 <img class="imageInNav" src="/styleFiles/inspiration.jpg">
 <navbar></navbar>
+
+
+<div class="row">
+<div class="filterBox col-md-offset-3 col-md-6 text-center well well-lg">
 <section class="products">
     <!-- <fullstack-logo></fullstack-logo> -->
     <!-- <img ng-src="{{ url }}"> -->
-    <div class="row">
       <label>Author:
         <select ng-model="selectedAuthor">
           <option ng-repeat="product in products | unique:'author' | orderBy:'author'">{{ product.author }}</select>
@@ -17,6 +20,12 @@
           <option ng-repeat="product in products | unique:'condition' | orderBy:'condition'">{{ product.condition }}</select>
       </label>
     </div>
+</div>
+
+
+
+
+
     <h1>Available Titles</h1>
     <h2>The most stupendous works!</h2>
 

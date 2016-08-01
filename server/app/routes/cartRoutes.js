@@ -58,7 +58,13 @@ router.post('/commitOrder', function(req, res, next) {
     return Promise.all(upArr);
   })
   .then(function() {
-    res.sendStatus(200);
+    console.log("=====  Asking for a new cart ID")
+    Order.getTheCartId(req.user.id)
+    .then(function(id) {
+      req.session.cartId = id;
+      console.log("------- Got cart ID", id)
+      res.sendStatus(200);
+    })
   })
   .catch(function(err) {
     res.status(401).send(err);

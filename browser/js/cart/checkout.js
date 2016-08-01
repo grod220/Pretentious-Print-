@@ -6,7 +6,7 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl) {
+app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl, $state) {
   // $scope.newQty = 0;
   var getData = function () {
     CartFactory.getCart()
@@ -18,10 +18,11 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl)
 
   getData();
   $scope.zipPattern = "\\d{5}(-\\d{4})?";
+  $scope.inProcess = false;
  
  // Handle order placement.
   $scope.placeOrder = function () {
-
+    $scope.inProcess = true;
     let stripeObj = {
       amount: $scope.data.total,
       currency: "usd",
@@ -54,10 +55,12 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl)
     .then(function (res) {
       if (res.status !== 200) {
         growl.error(res.data.message, {title: res.data.code,ttl: 3000, disableCountDown: true});
-
+        $scope.inProcess = false;
       } else {
-        growl.success("The credit card info was accepted", {ttl: 3000, disableCountDown: true});       
-        growl.success("Your order has been completed.", {ttl: 3000, disableCountDown: true});
+        growl.success("The credit card info was accepted", {ttl: 5000, disableCountDown: true});       
+        growl.success("Your order has been completed.", {ttl: 7000, disableCountDown: true});
+//        $scope.inProcess = false;
+        $state.go('home');
       }
     })
   };

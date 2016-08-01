@@ -39,17 +39,26 @@ router.post('/', function (req, res, next) {
 router.post('/commitOrder', function(req, res, next) {
   stripe.charges.create(req.body.stripeObj) 
   .then(function(charge) {
-    console.log('=========  Ready to post updates  =========');
-    console.log(req.body.upObj);
     return Order.findById(req.session.cartId)
   })
   .then(function(ord) {
-    console.log("------- Got order  -------", ord.id)
     return ord.update(req.body.upObj)
   })
   .then (function(reslt) {
     console.log("....... Update result was", reslt)
-    res.status(200).send(reslt);
+    console.log()
+    console.log()
+    let upArr = []
+    reslt.products.forEach(function (prod) {
+      console.log(' product id', prod.id, 'in stock', prod.inventory, 'quantity ordered', prod.lineItem.quantity)
+      prod.update({inventory: prod.inventory - prod.lineItem.quantity})
+      });
+    console.log();
+    console.log();
+    return Promise.all(upArr);
+  })
+  .then(function() {
+    res.sendStatus(200);
   })
   .catch(function(err) {
     res.status(401).send(err);

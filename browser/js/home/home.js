@@ -19,3 +19,15 @@ app.controller('homeCtrl', function($scope, $http, $log, CartFactory, ProductFac
   };
 
 });
+
+app.filter('authorFilter', function() {
+  return function(products, author) {
+    if (!author) {
+      return products;
+    }
+
+    return products.filter(function(product) {
+      return product.author === author;
+    });
+  }
+});

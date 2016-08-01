@@ -1,5 +1,8 @@
  'use strict';
 
+// Setup Stripe for credit card auth
+var stripe = require("stripe")("sk_test_BQokikJOvBiI2HlWgH4olfQ2");
+
 const router = require('express').Router();
 const db = require('../../db');
 const Order = db.model('order');
@@ -33,6 +36,19 @@ router.post('/', function (req, res, next) {
   .catch(next);
 
 });
+
+router.post('/submitCC', function(req, res, next) {
+  stripe.charges.create(req.body) 
+  .then(function(charge) {
+    console.log('+++ Success from charge, returned object is', charge);
+    res.send(charge);
+  })
+  .catch(function(err) {
+    console.log('+++ Failure from charge, returned object is', err);
+    res.status(401).send(err);
+  })
+})
+
 
 // not needed. Using above to overwrite if updating lineitem.
 // router.put('/:productId', function (req, res, next) {

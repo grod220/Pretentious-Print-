@@ -28,5 +28,14 @@ app.factory('CartFactory', function($http, $log) {
         .catch($log.error);
     };
 
+    factory.getCcAuth = function(stripeObj) {
+        return $http.post(baseRoute + '/submitCC', stripeObj)
+        .then(function(res) {;
+            console.log(',,, In the auth factory, got', res)
+            return res.data;
+        })
+        .catch($log.error);
+    };
+
     return factory;
 });

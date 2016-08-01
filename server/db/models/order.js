@@ -10,10 +10,22 @@ var Order = db.define('order', {
     type: Sequelize.ENUM('created','processing', 'canceled','completed'),
     defaultValue: 'created'
   },
+  name: {
+    type: Sequelize.STRING,
+  },
   date: {
     type: Sequelize.DATE
   },
   shippingAddress: {
+    type: Sequelize.STRING
+  },
+  shippingCity: {
+    type: Sequelize.STRING
+  },
+  shippingState: {
+    type: Sequelize.STRING
+  },
+  shippingZip: {
     type: Sequelize.STRING
   },
   billingAddress: {
@@ -21,6 +33,9 @@ var Order = db.define('order', {
   },
   notificationEmail: {
     type: Sequelize.STRING
+  },
+  stripeAuthorization: {
+    type: Sequelize.TEXT
   },
   total: {
     type: Sequelize.VIRTUAL,

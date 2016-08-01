@@ -1,5 +1,8 @@
  'use strict';
 
+// Setup Stripe for credit card auth
+var stripe = require("stripe")("sk_test_BQokikJOvBiI2HlWgH4olfQ2");
+
 const router = require('express').Router();
 const db = require('../../db');
 const Order = db.model('order');
@@ -15,7 +18,6 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-
   let gets = [
     Order.findById(req.session.cartId),
     Product.findById(req.body.productId)
@@ -34,9 +36,47 @@ router.post('/', function (req, res, next) {
 
 });
 
-// not needed. Using above to overwrite if updating lineitem.
-// router.put('/:productId', function (req, res, next) {
-// });
+router.post('/commitOrder', function(req, res, next) {
+  stripe.charges.create(req.body.stripeObj) 
+  .then(function(charge) {
+    return Order.findById(req.session.cartId)
+  })
+  .then(function(ord) {
+    return ord.update(req.body.upObj)
+  })
+  .then (function(reslt) {
+    console.log("....... Update result was", reslt)
+    console.log()
+    console.log()
+    let upArr = []
+    reslt.products.forEach(function (prod) {
+      console.log(' product id', prod.id, 'in stock', prod.inventory, 'quantity ordered', prod.lineItem.quantity)
+      prod.update({inventory: prod.inventory - prod.lineItem.quantity})
+      });
+    console.log();
+    console.log();
+    return Promise.all(upArr);
+  })
+  .then(function() {
+    res.sendStatus(200);
+  })
+  .catch(function(err) {
+    res.status(401).send(err);
+  })  
+})
+
+
+
+router.put('/:reviewId', function(req, res, next) {
+  Order.findById(req.session.cartId)
+  .then (function(ord) {
+    return ord.update(req.body)
+  })
+  .then (function (result) {
+    req.sen(result)
+  })
+  .catch(next)
+});
 
 router.delete('/product/:productId', function (req, res, next) {
   var arr = [

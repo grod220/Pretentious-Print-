@@ -1,0 +1,38 @@
+navbar {
+  display: inline;
+}
+
+.imageInNav {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+.imageInNav2 {
+   height: 80px;
+   background-image: url(/styleFiles/inspiration.jpg);
+   background-position: top;
+   background-color: black;
+}
+
+
+.altNav {
+   position: absolute;
+   text-align: center;
+   color: white;
+   top: 2%;
+   left: 0;
+   width: 100%;
+   li {
+    display: inline;
+    margin: 0 20px 0 20px;
+    a {
+      color: white;
+      font-size: 30px;
+      font-family: 'Old Standard TT', serif;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #899299;
+    }
+  }
+}

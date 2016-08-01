@@ -35,6 +35,7 @@ app.filter('unique', function() {
         output.push(product);
       }
     });
+    output.unshift("");
     return output;
   }
 });

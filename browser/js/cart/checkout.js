@@ -53,14 +53,11 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl)
     CartFactory.commitOrder(stripeObj, upObj)
     .then(function (res) {
       if (res.status !== 200) {
-        console.log('RETURNED bad status object is ', res);
-//        growl.error(res.data.message, {title: res.data.code,ttl: 3000, disableCountDown: true});
+        growl.error(res.data.message, {title: res.data.code,ttl: 3000, disableCountDown: true});
 
       } else {
-        console.log('RETURNED GOOD status object is ', res);
- //       growl.success("The credit card info was accepted", {ttl: 3000, disableCountDown: true});
-//        growl.success("Your order has been completed.", {ttl: 3000, disableCountDown: true});
-        
+        growl.success("The credit card info was accepted", {ttl: 3000, disableCountDown: true});       
+        growl.success("Your order has been completed.", {ttl: 3000, disableCountDown: true});
       }
     })
   };

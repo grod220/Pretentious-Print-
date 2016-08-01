@@ -1,12 +1,25 @@
 <section class="products">
     <!-- <fullstack-logo></fullstack-logo> -->
     <!-- <img ng-src="{{ url }}"> -->
-
+    <div class="row">
+      <label>Author:
+        <select ng-model="selectedAuthor">
+          <option ng-repeat="product in products | unique:'author' | orderBy:'author'">{{ product.author }}</select>
+      </label>
+      <label>Pretentiousness:
+        <select ng-model="selectedPretention">
+          <option ng-repeat="product in products | unique:'pretentionLevel' | orderBy:'pretentionLevel'">{{ product.pretentionLevel }}</select>
+      </label>
+      <label>Condition:
+        <select ng-model="selectedCondition">
+          <option ng-repeat="product in products | unique:'condition' | orderBy:'condition'">{{ product.condition }}</select>
+      </label>
+    </div>
     <h1>Available Titles</h1>
     <h2>The most stupendous works!</h2>
 
     <div class="row">
-      <div class="col-xs-4" ng-repeat="product in products">
+      <div class="col-xs-4" ng-repeat="product in products | productFilter:selectedAuthor:selectedPretention:selectedCondition">
         <a ui-sref="productPage({productId: product.id})"><img class="product-img" ng-src="{{ product.image }}"></a>
         <div class="caption">
           <h5>

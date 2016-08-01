@@ -4,20 +4,22 @@
     <div class="row">
       <label>Author:
         <select ng-model="selectedAuthor">
-          <option ng-repeat="product in products">{{ product.author }}</select>
+          <option ng-repeat="product in products | uniqueAuthor | orderBy:'author'">{{ product.author }}</select>
       </label>
-      <!-- <label>Price:
-        <select ng-model="selectedPrices" ng-options="price as product.price for product in products"></select>
+      <label>Pretentiousness:
+        <select ng-model="selectedPretention">
+          <option ng-repeat="product in products | uniquePretention | orderBy:'pretentionLevel'">{{ product.pretentionLevel }}</select>
       </label>
-      <label>Pretention Level:
-        <select ng-model="selectedPretentions" ng-options="pretenion as product.pretentionLevel for product in products" ng-change="filterPretentions()"></select>
-      </label> -->
+      <label>Condition:
+        <select ng-model="selectedCondition">
+          <option ng-repeat="product in products | orderBy:'condition'">{{ product.condition }}</select>
+      </label>
     </div>
     <h1>Available Titles</h1>
     <h2>The most stupendous works!</h2>
 
     <div class="row">
-      <div class="col-xs-4" ng-repeat="product in products | authorFilter:selectedAuthor">
+      <div class="col-xs-4" ng-repeat="product in products | productFilter:selectedAuthor:selectedPretention:selectedCondition">
         <a ui-sref="productPage({productId: product.id})"><img class="product-img" ng-src="{{ product.image }}"></a>
         <div class="caption">
           <h5>

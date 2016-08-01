@@ -31,3 +31,76 @@ app.filter('authorFilter', function() {
     });
   }
 });
+
+app.filter('uniqueAuthor', function() {
+  return function(products) {
+    if (products === undefined) { return; }
+    var output = [];
+    products.forEach(function(product) {
+      var add = true;
+      for (var i = 0; i < output.length; i++) {
+        if (output[i].author === product.author) {
+          add = false;
+        }
+      }
+      if (add) {
+        output.push(product);
+      }
+    });
+    return output;
+  }
+});
+
+app.filter('uniquePretention', function() {
+  return function(products) {
+    if (products === undefined) { return; }
+    var output = [];
+    products.forEach(function(product) {
+      var add = true;
+      for (var i = 0; i < output.length; i++) {
+        if (output[i].pretentionLevel === product.pretentionLevel) {
+          add = false;
+        }
+      }
+      if (add) {
+        output.push(product);
+      }
+    });
+    return output;
+  }
+});
+
+app.filter('uniqueCondition', function() {
+  return function(products) {
+    if (products === undefined) { return; }
+    var output = [];
+    products.forEach(function(product) {
+      var add = true;
+      for (var i = 0; i < output.length; i++) {
+        if (output[i].condition === product.condition) {
+          add = false;
+        }
+      }
+      if (add) {
+        output.push(product);
+      }
+    });
+    return output;
+  }
+});
+
+app.filter('productFilter', function() {
+  return function(products, author, pretention, condition) {
+    if (!author && !pretention && !condition) {
+      return products;
+    }
+
+    return products.filter(function(product) {
+      var aBool = author ? product.author === author : true;
+      var pBool = pretention ? product.pretentionLevel == pretention : true;
+      var cBool = condition ? product.condition === condition : true;
+
+      return aBool && pBool && cBool;
+    })
+  }
+})

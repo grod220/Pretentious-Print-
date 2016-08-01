@@ -48,9 +48,17 @@ router.post('/submitCC', function(req, res, next) {
 })
 
 
-// not needed. Using above to overwrite if updating lineitem.
-// router.put('/:productId', function (req, res, next) {
-// });
+
+router.put('/:reviewId', function(req, res, next) {
+  Order.findById(req.session.cartId)
+  .then (function(ord) {
+    return ord.update(req.body)
+  })
+  .then (function (result) {
+    req.sen(result)
+  })
+  .catch(next)
+});
 
 router.delete('/product/:productId', function (req, res, next) {
   var arr = [

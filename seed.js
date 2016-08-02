@@ -29,8 +29,8 @@ var Promise = require('sequelize').Promise;
 var fs = require('fs');
 var path = require('path');
 
-function random100 () {
-  return Math.floor((Math.random() * 100) + 1);
+function randomNum (num) {
+  return Math.floor((Math.random() * num) + 1);
 }
 
 var seedStuff = function () {
@@ -80,10 +80,18 @@ var seedStuff = function () {
         return User.create(userObj);
     });
 
-    var jsonProducts = fs.readFileSync(path.join(__dirname, './seedData/productsSeed.json'), 'utf-8');
+    var jsonGoogle = fs.readFileSync(path.join(__dirname, './seedData/googleAPI.json'), 'utf-8');
+    var google = JSON.parse(jsonGoogle);
+    var googleLength = google.items.length;
+
+    var jsonProducts = fs.readFileSync(path.join(__dirname, './seedData/productsSeedFinal.json'), 'utf-8');
     var products = JSON.parse(jsonProducts);
     products.forEach(function (product, index) {
-      product.image = 'http://lorempixel.com/300/' + (index + 400) + '/';
+      product.image = google.items[index].volumeInfo.imageLinks.thumbnail;
+      product.title = google.items[index].volumeInfo.title;
+      product.author = google.items[index].volumeInfo.authors[0];
+      product.datePublished = Date.parse(google.items[index].volumeInfo.publishedDate);
+      product.description = google.items[index].volumeInfo.description;
     });
     var creatingProducts = products.map(function(prodObj) {
         return Product.create(prodObj);
@@ -92,8 +100,8 @@ var seedStuff = function () {
     var jsonLineItems = fs.readFileSync(path.join(__dirname, './seedData/lineItemsSeed.json'), 'utf-8');
     var lineItems = JSON.parse(jsonLineItems);
     lineItems.forEach(function (lineItem) {
-      lineItem.orderId = random100();
-      lineItem.productId = random100();
+      lineItem.orderId = randomNum(100);
+      lineItem.productId = randomNum(googleLength);
     });
     var creatingLineItems = lineItems.map(function (lineItemObj) {
         return LineItem.create(lineItemObj);
@@ -108,8 +116,8 @@ var seedStuff = function () {
       })
       .then(function (reviews) {
         var arr = reviews.map(function (review) {
-          review.setUser(random100());
-          review.setProduct(random100());
+          review.setUser(randomNum(100));
+          review.setProduct(randomNum(googleLength));
           return review.save();
         });
         return Promise.all(arr);

@@ -1,0 +1,2935 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 40,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "RubcQ7xl76cC",
+   "etag": "97udAOzOfSA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/RubcQ7xl76cC",
+   "volumeInfo": {
+    "title": "Tolstoy",
+    "subtitle": "A Russian Life",
+    "authors": [
+     "Rosamund Bartlett"
+    ],
+    "publisher": "Houghton Mifflin Harcourt",
+    "publishedDate": "2011-11-08",
+    "description": "“Magisterial sweep and scale.”—The Independent (UK) In November 1910, Count Lev Tolstoy died at a remote Russian railway station. At the time of his death, he was the most famous man in Russia, with a growing international following, and more ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780547545875"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0547545878"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 544,
+    "printType": "BOOK",
+    "categories": [
+     "Biography & Autobiography"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "3.4.5.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=RubcQ7xl76cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=RubcQ7xl76cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=RubcQ7xl76cC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=RubcQ7xl76cC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Tolstoy.html?hl=&id=RubcQ7xl76cC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "10"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 14.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 14.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=RubcQ7xl76cC&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.499E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.499E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Tolstoy-sample-epub.acsm?id=RubcQ7xl76cC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Tolstoy-sample-pdf.acsm?id=RubcQ7xl76cC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=RubcQ7xl76cC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "bI82a7PEBX4C",
+   "etag": "hc0T9REb8AE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/bI82a7PEBX4C",
+   "volumeInfo": {
+    "title": "The Kingdom of God Is Within You",
+    "authors": [
+     "Count Leo Nikolayevich Tolstoy",
+     "Leo Tolstoy"
+    ],
+    "publisher": "ReadHowYouWant.com",
+    "publishedDate": "2009-03-14",
+    "description": "This is a unique book on the contradictory theories of life. Tolstoy being a social reformer and propagator of peace has explored Christ's preaching of non-resistance against violence. Written in an inspirational manner, The work evokes deep ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1442942495"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781442942493"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Philosophy"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.8.4.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=bI82a7PEBX4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=bI82a7PEBX4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=bI82a7PEBX4C&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=bI82a7PEBX4C&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/The_Kingdom_of_God_Is_Within_You.html?hl=&id=bI82a7PEBX4C"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "9"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 3.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 3.03,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=bI82a7PEBX4C&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 3990000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 3030000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_Kingdom_of_God_Is_Within_You-sample-epub.acsm?id=bI82a7PEBX4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_Kingdom_of_God_Is_Within_You-sample-pdf.acsm?id=bI82a7PEBX4C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=bI82a7PEBX4C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "-RySoV8ypsoC",
+   "etag": "o1b5dhv9jqw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/-RySoV8ypsoC",
+   "volumeInfo": {
+    "title": "Leo Tolstoy's 20 Greatest Short Stories Annotated",
+    "authors": [
+     "Leo Tolstoy"
+    ],
+    "publisher": "Bottletree Books LLC",
+    "publishedDate": "2009-08-01",
+    "description": "\"Anna Karenina\" and \"War and Peace\" branded Tolstoy as one of the greatest writers in modern history. Few, however, have read his wonderful short stories. Now, in one collection, are the 20 greatest short stories of Leo Tolstoy, which give a ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781933747156"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1933747153"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 396,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 4,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "0.0.3.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=-RySoV8ypsoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=-RySoV8ypsoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=-RySoV8ypsoC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=-RySoV8ypsoC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Leo_Tolstoy_s_20_Greatest_Short_Stories.html?hl=&id=-RySoV8ypsoC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "5"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 8.98,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 7.54,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=-RySoV8ypsoC&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 8980000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 7540000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=-RySoV8ypsoC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "coZvqWuWWKQC",
+   "etag": "AVUj0Z1OEmQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/coZvqWuWWKQC",
+   "volumeInfo": {
+    "title": "Resurrection",
+    "authors": [
+     "Leo Tolstoy",
+     "Louise Maude"
+    ],
+    "publisher": "Courier Corporation",
+    "publishedDate": "2004-03-01",
+    "description": "Tolstoy's novel of spiritual regeneration recounts the sins of a young Russian nobleman and his attempts in later life to redress those transgressions. A panoramic view of Russian social life at the end of the 19th century, Resurrection pointedly ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0486432165"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780486432168"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 393,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 8,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "2.1.1.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=coZvqWuWWKQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=coZvqWuWWKQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=coZvqWuWWKQC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=coZvqWuWWKQC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Resurrection.html?hl=&id=coZvqWuWWKQC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Resurrection-sample-pdf.acsm?id=coZvqWuWWKQC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=coZvqWuWWKQC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Jhw9Bg42pSMC",
+   "etag": "zVnHHEpXl5o",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Jhw9Bg42pSMC",
+   "volumeInfo": {
+    "title": "Leo Tolstoy",
+    "authors": [
+     "Harold Bloom"
+    ],
+    "publisher": "Infobase Publishing",
+    "publishedDate": "2009-01-01",
+    "description": "A collection of critical essays discuss the works of the Russian author.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781438113289"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1438113285"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 254,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Jhw9Bg42pSMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Jhw9Bg42pSMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=Jhw9Bg42pSMC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Jhw9Bg42pSMC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Leo_Tolstoy.html?hl=&id=Jhw9Bg42pSMC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "5"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Leo_Tolstoy-sample-epub.acsm?id=Jhw9Bg42pSMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Leo_Tolstoy-sample-pdf.acsm?id=Jhw9Bg42pSMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=Jhw9Bg42pSMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "VzktnjJYW0UC",
+   "etag": "a+NDGTU0xjA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/VzktnjJYW0UC",
+   "volumeInfo": {
+    "title": "Beowulf",
+    "authors": [
+     "Frances B. Gummere"
+    ],
+    "publisher": "Red and Black Publishers",
+    "publishedDate": "2007-01-01",
+    "description": "\" 'Tis better to die than to live in shame.\" The oldest existing story written in Old English, \"Beowulf\" is the classic tale of courage and honor. In the Great Hall of Hrothgar, King of the Danes, the warrior Beowulf, son of a Swedish King, wages ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780979181313"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0979181313"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 184,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.2.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=VzktnjJYW0UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=VzktnjJYW0UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=VzktnjJYW0UC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=VzktnjJYW0UC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Beowulf.html?hl=&id=VzktnjJYW0UC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "5"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Beowulf-sample-epub.acsm?id=VzktnjJYW0UC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=VzktnjJYW0UC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "asgWzzawkVEC",
+   "etag": "U08zHezZQm0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/asgWzzawkVEC",
+   "volumeInfo": {
+    "title": "War and Peace",
+    "authors": [
+     "Leo Tolstoy"
+    ],
+    "publisher": "Modern Library",
+    "publishedDate": "2012-04-11",
+    "description": "Often called the greatest novel ever written, War and Peace is at once an epic of the Napoleonic Wars, a philosophical study, and a celebration of the Russian spirit. Tolstoy’s genius is seen clearly in the multitude of characters in this massive ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780307820396"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0307820394"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 1424,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "2.7.6.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=asgWzzawkVEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=asgWzzawkVEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=asgWzzawkVEC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=asgWzzawkVEC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/War_and_Peace.html?hl=&id=asgWzzawkVEC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "6"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 11.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 11.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=asgWzzawkVEC&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/War_and_Peace-sample-epub.acsm?id=asgWzzawkVEC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=asgWzzawkVEC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "SuT9CwAAQBAJ",
+   "etag": "n7VOXXgYfME",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/SuT9CwAAQBAJ",
+   "volumeInfo": {
+    "title": "To the Lighthouse",
+    "authors": [
+     "Virginia Woolf"
+    ],
+    "publisher": "Virginia Woolf",
+    "publishedDate": "2016-04-17",
+    "description": "To the Lighthouse (5 May 1927) is a novel by Virginia Woolf. A landmark novel of high modernism, the text, centering on the Ramsay family and their visits to the Isle of Skye in Scotland between 1910 and 1920, skillfully manipulates temporality ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9786050422795"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "6050422796"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 13,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=SuT9CwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=SuT9CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=SuT9CwAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=SuT9CwAAQBAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/To_the_Lighthouse.html?hl=&id=SuT9CwAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "3"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 2.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 2.24,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=SuT9CwAAQBAJ&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2990000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 2240000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/To_the_Lighthouse-sample-epub.acsm?id=SuT9CwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/To_the_Lighthouse-sample-pdf.acsm?id=SuT9CwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=SuT9CwAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "AziYQQAACAAJ",
+   "etag": "GrbUPQb99XI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/AziYQQAACAAJ",
+   "volumeInfo": {
+    "title": "The Wind-Up Bird Chronicle",
+    "authors": [
+     "Haruki Murakami"
+    ],
+    "publishedDate": "2010",
+    "description": "Toru Okada's cat has disappeared and this has unsettled his wife, who is herself growing more distant every day. Then there are the increasingly explicit telephone calls he has started receiving. As this compelling story unfolds, the tidy ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1846553873"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781846553875"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 624,
+    "printType": "BOOK",
+    "categories": [
+     "Japan"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 9,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=AziYQQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=AziYQQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=AziYQQAACAAJ&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=AziYQQAACAAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/The_Wind_Up_Bird_Chronicle.html?hl=&id=AziYQQAACAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=AziYQQAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Zd1l0Ivij8wC",
+   "etag": "W/AaA+BUSTY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Zd1l0Ivij8wC",
+   "volumeInfo": {
+    "title": "The Unbearable Lightness of Being",
+    "subtitle": "Twentieth Anniversary Edition",
+    "authors": [
+     "Milan Kundera"
+    ],
+    "publisher": "Harper Collins",
+    "publishedDate": "2004-05-04",
+    "description": "When The Unbearable Lightness of Being was first published in English, it was hailed as \"a work of the boldest mastery, originality, and richness\" by critic Elizabeth Hardwick and named one of the best books of 1984 by the New York Times Book ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0060597186"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780060597184"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 9,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Zd1l0Ivij8wC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Zd1l0Ivij8wC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=Zd1l0Ivij8wC&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Zd1l0Ivij8wC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/The_Unbearable_Lightness_of_Being.html?hl=&id=Zd1l0Ivij8wC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=Zd1l0Ivij8wC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "eAh-AwAAQBAJ",
+   "etag": "3KV6TmqNetU",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/eAh-AwAAQBAJ",
+   "volumeInfo": {
+    "title": "The Sorrows of Young Werther",
+    "authors": [
+     "Johann Wolfgang Von Goethe"
+    ],
+    "publisher": "BookRix",
+    "publishedDate": "2015-01-26",
+    "description": "The Sorrows of Young Werther is an epistolary novel by Johann Wolfgang von Goethe. It's publication instantly made the 24-year-old Goethe one of the first international literary celebrities. Of all his works, this book was the most known to the ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9783736804753"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "373680475X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 171,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=eAh-AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=eAh-AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=eAh-AwAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=eAh-AwAAQBAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/The_Sorrows_of_Young_Werther.html?hl=&id=eAh-AwAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "5"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 2.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 2.51,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=eAh-AwAAQBAJ&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2990000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 2510000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_Sorrows_of_Young_Werther-sample-epub.acsm?id=eAh-AwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_Sorrows_of_Young_Werther-sample-pdf.acsm?id=eAh-AwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=eAh-AwAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "1u7PRB5g6FYC",
+   "etag": "haztedo2HqY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/1u7PRB5g6FYC",
+   "volumeInfo": {
+    "title": "The Sense of an Ending",
+    "authors": [
+     "Julian Barnes"
+    ],
+    "publisher": "Vintage",
+    "publishedDate": "2011-10-05",
+    "description": "Winner of the 2011 Man Booker Prize By an acclaimed writer at the height of his powers, The Sense of an Ending extends a streak of extraordinary books that began with the best-selling Arthur & George and continued with Nothing to Be Frightened Of ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780307957337"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0307957330"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 176,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 1870,
+    "maturityRating": "MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "4.11.4.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=1u7PRB5g6FYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=1u7PRB5g6FYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=1u7PRB5g6FYC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=1u7PRB5g6FYC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/The_Sense_of_an_Ending.html?hl=&id=1u7PRB5g6FYC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "10"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 11.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 11.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=1u7PRB5g6FYC&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_Sense_of_an_Ending-sample-epub.acsm?id=1u7PRB5g6FYC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=1u7PRB5g6FYC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "v44jBjKVeO8C",
+   "etag": "y/u8DkGfLbQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/v44jBjKVeO8C",
+   "volumeInfo": {
+    "title": "The Satanic Verses",
+    "subtitle": "A Novel",
+    "authors": [
+     "Salman Rushdie"
+    ],
+    "publisher": "Random House",
+    "publishedDate": "2011-02-23",
+    "description": "One of the most controversial and acclaimed novels ever written, The Satanic Verses is Salman Rushdie’s best-known and most galvanizing book. Set in a modern world filled with both mayhem and miracles, the story begins with a bang: the terrorist ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780307786654"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "030778665X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 576,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 45,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.2.2.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=v44jBjKVeO8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=v44jBjKVeO8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=v44jBjKVeO8C&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=v44jBjKVeO8C&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/The_Satanic_Verses.html?hl=&id=v44jBjKVeO8C"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "3"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 12.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 12.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=v44jBjKVeO8C&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_Satanic_Verses-sample-epub.acsm?id=v44jBjKVeO8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=v44jBjKVeO8C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "VRfe-QG_ls4C",
+   "etag": "yv+zWiYLf6Y",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/VRfe-QG_ls4C",
+   "volumeInfo": {
+    "title": "The New York Trilogy",
+    "authors": [
+     "Paul Auster"
+    ],
+    "publisher": "Faber & Faber",
+    "publishedDate": "2008-09-04",
+    "description": "The New York Trilogy is perhaps the most astonishing work by one of America's most consistently astonishing writers. The Trilogy is three cleverly interconnected novels that exploit the elements of standard detective fiction and achieve a new ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780571246120"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0571246125"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 1.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "0.5.5.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=VRfe-QG_ls4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=VRfe-QG_ls4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=VRfe-QG_ls4C&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=VRfe-QG_ls4C&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/The_New_York_Trilogy.html?hl=&id=VRfe-QG_ls4C"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "9"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_New_York_Trilogy-sample-epub.acsm?id=VRfe-QG_ls4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_New_York_Trilogy-sample-pdf.acsm?id=VRfe-QG_ls4C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=VRfe-QG_ls4C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "gFSHD40Y320C",
+   "etag": "PD/96O7OhUs",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/gFSHD40Y320C",
+   "volumeInfo": {
+    "title": "Slaughterhouse Five Or the Children's Crusade",
+    "subtitle": "A Duty Dance With Death",
+    "authors": [
+     "Kurt Vonnegut"
+    ],
+    "publisher": "Dell Publishing Company",
+    "publishedDate": "1991",
+    "description": "Billy Pilgrim survives capture by the Gemans in World War II, the Dresden bombings, and the struggle for financial success only to be kidnapped in a flying saucer and taken to the planet Tralfamadore.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780440180296"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0440180295"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 215,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 22,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.0.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=gFSHD40Y320C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=gFSHD40Y320C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=gFSHD40Y320C&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=gFSHD40Y320C&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Slaughterhouse_Five_Or_the_Children_s_Cr.html?hl=&id=gFSHD40Y320C"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=gFSHD40Y320C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "pfxcPwAACAAJ",
+   "etag": "YQTP/vAGy7s",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/pfxcPwAACAAJ",
+   "volumeInfo": {
+    "title": "Naked Lunch",
+    "subtitle": "",
+    "authors": [
+     "William S. Burroughs"
+    ],
+    "publisher": "HarperPerennial",
+    "publishedDate": "2008",
+    "description": "Provocative, influential, morbidly fascinating, 'Naked Lunch' is an apocalyptic ride through the darker recesses of the human psyche.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0007268416"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780007268412"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 308,
+    "printType": "BOOK",
+    "categories": [
+     "Drug abuse"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 32,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=pfxcPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=pfxcPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=pfxcPwAACAAJ&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=pfxcPwAACAAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Naked_Lunch.html?hl=&id=pfxcPwAACAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=pfxcPwAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "QEHI-uN0tmgC",
+   "etag": "2HbZQtdlDto",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/QEHI-uN0tmgC",
+   "volumeInfo": {
+    "title": "Mrs Dalloway",
+    "authors": [
+     "Virginia Woolf"
+    ],
+    "publisher": "Wordsworth Editions",
+    "publishedDate": "1996-01-01",
+    "description": "Direct and vivid in its telling of the details of a day in the life of Clarissa Dalloway, the novel manages ultimately to deliver much more. It is the feelings that loom behind those daily events--the social alliances, the shopkeeper's exchange ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1853261912"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781853261916"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 141,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 38,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.2.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=QEHI-uN0tmgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=QEHI-uN0tmgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=QEHI-uN0tmgC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=QEHI-uN0tmgC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Mrs_Dalloway.html?hl=&id=QEHI-uN0tmgC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "4"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Mrs_Dalloway-sample-epub.acsm?id=QEHI-uN0tmgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=QEHI-uN0tmgC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "utvB0I_0SZsC",
+   "etag": "7MUKf1v3O60",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/utvB0I_0SZsC",
+   "volumeInfo": {
+    "title": "Lolita",
+    "authors": [
+     "Vladimir Nabokov"
+    ],
+    "publisher": "Vintage",
+    "publishedDate": "2010-08-24",
+    "description": "Awe and exhiliration--along with heartbreak and mordant wit--abound in Lolita, Nabokov's most famous and controversial novel, which tells the story of the aging Humbert Humbert's obsessive, devouring, and doomed passion for the nymphet Dolores ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0307744027"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780307744029"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 387,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 48,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "0.8.7.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=utvB0I_0SZsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=utvB0I_0SZsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=utvB0I_0SZsC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=utvB0I_0SZsC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Lolita.html?hl=&id=utvB0I_0SZsC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "10"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 11.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 11.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=utvB0I_0SZsC&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Lolita-sample-epub.acsm?id=utvB0I_0SZsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=utvB0I_0SZsC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Nhe2yvx6hP8C",
+   "etag": "SiTETr/qiRU",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Nhe2yvx6hP8C",
+   "volumeInfo": {
+    "title": "Infinite Jest",
+    "authors": [
+     "David Foster Wallace"
+    ],
+    "publisher": "Back Bay Books",
+    "publishedDate": "2009-04-13",
+    "description": "A gargantuan, mind-altering comedy about the Pursuit of Happiness in America set in an addicts' halfway house and a tennis academy, and featuring the most endearingly screwed-up family to come along in recent fiction, Infinite Jest explores ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0316073857"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780316073851"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 1104,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 26,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.12.12.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Nhe2yvx6hP8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Nhe2yvx6hP8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=Nhe2yvx6hP8C&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Nhe2yvx6hP8C&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Infinite_Jest.html?hl=&id=Nhe2yvx6hP8C"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "30"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 12.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 12.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=Nhe2yvx6hP8C&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Infinite_Jest-sample-epub.acsm?id=Nhe2yvx6hP8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=Nhe2yvx6hP8C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "qGA_3RGqTkQC",
+   "etag": "3VUTPRg08Hw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/qGA_3RGqTkQC",
+   "volumeInfo": {
+    "title": "Mark Z. Danielewski's House of Leaves",
+    "authors": [
+     "Mark Z. Danielewski"
+    ],
+    "publisher": "Pantheon",
+    "publishedDate": "2000",
+    "description": "A family relocates to a small house on Ash Tree Lane and discovers that the inside of their new home seems to be without boundaries",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780375420528"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0375420525"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 709,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 1556,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.1.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=qGA_3RGqTkQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=qGA_3RGqTkQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=qGA_3RGqTkQC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=qGA_3RGqTkQC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Mark_Z_Danielewski_s_House_of_Leaves.html?hl=&id=qGA_3RGqTkQC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=qGA_3RGqTkQC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "UPpzCAAAQBAJ",
+   "etag": "dFLMIwoNcao",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/UPpzCAAAQBAJ",
+   "volumeInfo": {
+    "title": "Heart of Darkness",
+    "authors": [
+     "Joseph Conrad"
+    ],
+    "publisher": "eKitap Projesi",
+    "publishedDate": "2015-04-06",
+    "description": "Heart of Darkness (1899) is a short novel by Joseph Conrad, written as a frame narrative, about Charles Marlow’s life as an ivory transporter down the Congo River in Central Africa. The river is “a mighty big river, that you could see on the map ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9786155529993"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "615552999X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 102,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 94,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.7.7.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=UPpzCAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=UPpzCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=UPpzCAAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=UPpzCAAAQBAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Heart_of_Darkness.html?hl=&id=UPpzCAAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "11"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 5.13,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 3.85,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=UPpzCAAAQBAJ&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 5130000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 3850000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Heart_of_Darkness-sample-epub.acsm?id=UPpzCAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Heart_of_Darkness-sample-pdf.acsm?id=UPpzCAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=UPpzCAAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "jbpsQD0khY0C",
+   "etag": "TovNH2D4zIU",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/jbpsQD0khY0C",
+   "volumeInfo": {
+    "title": "Foucault's Pendulum",
+    "authors": [
+     "Umberto Eco"
+    ],
+    "publisher": "Houghton Mifflin Harcourt",
+    "publishedDate": "2007-03-05",
+    "description": "Bored with their work, three Milanese editors cook up \"the Plan,\" a hoax that connects the medieval Knights Templar with other occult groups from ancient to modern times. This produces a map indicating the geographical point from which all the ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0547539681"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780547539683"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 656,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 144,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.9.7.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=jbpsQD0khY0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=jbpsQD0khY0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=jbpsQD0khY0C&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=jbpsQD0khY0C&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Foucault_s_Pendulum.html?hl=&id=jbpsQD0khY0C"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "13"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 7.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 7.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=jbpsQD0khY0C&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 7990000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 7990000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Foucault_s_Pendulum-sample-epub.acsm?id=jbpsQD0khY0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Foucault_s_Pendulum-sample-pdf.acsm?id=jbpsQD0khY0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=jbpsQD0khY0C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Oef4crUvK1QC",
+   "etag": "0NjSlTe+LBs",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Oef4crUvK1QC",
+   "volumeInfo": {
+    "title": "The Divine Comedy",
+    "authors": [
+     "Dante Alighieri"
+    ],
+    "publisher": "BiblioBazaar, LLC",
+    "publishedDate": "2008-08",
+    "description": "Midway upon the journey of our life- I found myself within a forest dark- For the straightforward pathway had been lost.q (Excerpt)",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0554260859"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780554260853"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 708,
+    "printType": "BOOK",
+    "categories": [
+     "Poetry"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 8,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Oef4crUvK1QC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Oef4crUvK1QC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=Oef4crUvK1QC&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Oef4crUvK1QC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/The_Divine_Comedy.html?hl=&id=Oef4crUvK1QC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=Oef4crUvK1QC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "hJ86DAAAQBAJ",
+   "etag": "QBVlfUOLzNo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/hJ86DAAAQBAJ",
+   "volumeInfo": {
+    "title": "Crime and Punishment",
+    "authors": [
+     "Fyodor Dostoyevsky"
+    ],
+    "publisher": "Xist Publishing",
+    "publishedDate": "2016-04-02",
+    "description": "Crime and Punishment by Fyodor Dostoevsky from Coterie Classics All Coterie Classics have been formatted for ereaders and devices and include a bonus link to the free audio book. “Pain and suffering are always inevitable for a large intelligence ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781681959382"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1681959380"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 551,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=hJ86DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=hJ86DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=hJ86DAAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=hJ86DAAAQBAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Crime_and_Punishment.html?hl=&id=hJ86DAAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "3"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=hJ86DAAAQBAJ&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 990000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 990000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Crime_and_Punishment-sample-epub.acsm?id=hJ86DAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Crime_and_Punishment-sample-pdf.acsm?id=hJ86DAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=hJ86DAAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Xfze51E7TEoC",
+   "etag": "jv9FoYoZkks",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Xfze51E7TEoC",
+   "volumeInfo": {
+    "title": "Catch-22",
+    "subtitle": "A Novel",
+    "authors": [
+     "Joseph Heller"
+    ],
+    "publisher": "Simon and Schuster",
+    "publishedDate": "1999-10-05",
+    "description": "Presents the contemporary classic depicting the struggles of a U.S. airman attempting to survive the lunacy and depravity of a World War II base",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780684865133"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0684865130"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 415,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 95,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.0.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Xfze51E7TEoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Xfze51E7TEoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=Xfze51E7TEoC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Xfze51E7TEoC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Catch_22.html?hl=&id=Xfze51E7TEoC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=Xfze51E7TEoC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "bdD5ChpSYG4C",
+   "etag": "muv9SMuLoUg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/bdD5ChpSYG4C",
+   "volumeInfo": {
+    "title": "As I Lay Dying",
+    "authors": [
+     "William Faulkner"
+    ],
+    "publisher": "Harper Collins",
+    "publishedDate": "2013-01-01",
+    "description": "Set in Yoknapatawpha County, Mississippi, As I Lay Dying tells the story of the dysfunctional Bundren family as they set out to fulfill Addie Bundren’s dying wish. Told by fifteen narrators, including Jewel, Cash, Darl and Dewey Dell, As I Lay ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781443421065"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1443421065"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 270,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "2.5.4.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=bdD5ChpSYG4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=bdD5ChpSYG4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=bdD5ChpSYG4C&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=bdD5ChpSYG4C&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/As_I_Lay_Dying.html?hl=&id=bdD5ChpSYG4C"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "7"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/As_I_Lay_Dying-sample-epub.acsm?id=bdD5ChpSYG4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=bdD5ChpSYG4C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "NjBz-8TLnTEC",
+   "etag": "GLnemSZU62c",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/NjBz-8TLnTEC",
+   "volumeInfo": {
+    "title": "Anna Karenina",
+    "authors": [
+     "Leo Tolstoy",
+     "Richard Pevear"
+    ],
+    "publisher": "Penguin UK",
+    "publishedDate": "2002-12-31",
+    "description": "The Award-Winning New Translation Of The Great Russian Novel.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780140449174"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0140449175"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 837,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 10,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.2.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=NjBz-8TLnTEC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=NjBz-8TLnTEC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=NjBz-8TLnTEC&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=NjBz-8TLnTEC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Anna_Karenina.html?hl=&id=NjBz-8TLnTEC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "5"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=NjBz-8TLnTEC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "WLxFJ3If0CUC",
+   "etag": "hG+l+zjFQmA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/WLxFJ3If0CUC",
+   "volumeInfo": {
+    "title": "J. D. Salinger",
+    "subtitle": "A Life",
+    "authors": [
+     "Kenneth Slawenski"
+    ],
+    "publisher": "Random House Incorporated",
+    "publishedDate": "2012-01",
+    "description": "Examines the life of the reclusive author of Catcher in the Rye including his encounters with celebrities, his love life, his devotion to eastern religion and his conflicted relationship with his success. Reprint.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780812982596"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0812982592"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 464,
+    "printType": "BOOK",
+    "categories": [
+     "Biography & Autobiography"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 3,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=WLxFJ3If0CUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=WLxFJ3If0CUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=WLxFJ3If0CUC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=WLxFJ3If0CUC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/J_D_Salinger.html?hl=&id=WLxFJ3If0CUC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=WLxFJ3If0CUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "N451neJ3drIC",
+   "etag": "fKOGKoYm+W0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/N451neJ3drIC",
+   "volumeInfo": {
+    "title": "Cats of Copenhagen",
+    "authors": [
+     "James Joyce"
+    ],
+    "publisher": "Simon and Schuster",
+    "publishedDate": "2012-10-16",
+    "description": "The first-ever U.S. edition of this delightful gem based on a letter Joyce wrote to his grandson, revealing the modernist master’s playful side—filled with one-of-a-kind illustrations—the perfect gift for Joyce fans and cat lovers alike. The ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781476708959"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1476708959"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 32,
+    "printType": "BOOK",
+    "categories": [
+     "Juvenile Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=N451neJ3drIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=N451neJ3drIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=N451neJ3drIC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=N451neJ3drIC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Cats_of_Copenhagen.html?hl=&id=N451neJ3drIC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "3"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 10.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 10.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=N451neJ3drIC&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Cats_of_Copenhagen-sample-epub.acsm?id=N451neJ3drIC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Cats_of_Copenhagen-sample-pdf.acsm?id=N451neJ3drIC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=N451neJ3drIC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "7NVxCQAAQBAJ",
+   "etag": "9cVKlY9JMpE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/7NVxCQAAQBAJ",
+   "volumeInfo": {
+    "title": "Finnegans Wake",
+    "authors": [
+     "James Joyce"
+    ],
+    "publisher": "Penguin UK",
+    "publishedDate": "2015-06-25",
+    "description": "A daring work of experimental, Modernist genius, James Joyce's Finnegans Wake is one of the greatest literary achievements of the twentieth century, and the crowning glory of Joyce's life. The Penguin Modern Classics edition of includes an ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780241246542"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0241246547"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 688,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 17,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.3.2.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=7NVxCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=7NVxCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=7NVxCQAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=7NVxCQAAQBAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Finnegans_Wake.html?hl=&id=7NVxCQAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "7"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 18.32,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 9.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=7NVxCQAAQBAJ&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.832E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Finnegans_Wake-sample-epub.acsm?id=7NVxCQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=7NVxCQAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "M3BmhdJG3z8C",
+   "etag": "7r4LutqI558",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/M3BmhdJG3z8C",
+   "volumeInfo": {
+    "title": "Dubliners",
+    "authors": [
+     "James Joyce",
+     "Laurence Davies"
+    ],
+    "publisher": "Wordsworth Editions",
+    "publishedDate": "1993",
+    "description": "Introduction and Notes by Laurence Davies, Dartmouth College, New Hampshire. Living overseas but writing, always, about his native city, Joyce made Dublin unforgettable. The stories in Dubliners show us truants, seducers, gossips, rally-drivers ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1853260487"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781853260483"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 192,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 76,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=M3BmhdJG3z8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=M3BmhdJG3z8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=M3BmhdJG3z8C&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=M3BmhdJG3z8C&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Dubliners.html?hl=&id=M3BmhdJG3z8C"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "2"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Dubliners-sample-epub.acsm?id=M3BmhdJG3z8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=M3BmhdJG3z8C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "4jWS7bMZ1XMC",
+   "etag": "ux4rOVX+JnE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/4jWS7bMZ1XMC",
+   "volumeInfo": {
+    "title": "Ulysses",
+    "authors": [
+     "James Joyce",
+     "Jeri Johnson"
+    ],
+    "publisher": "Oxford Paperbacks",
+    "publishedDate": "2008-04-17",
+    "description": "A day in the life of Leopold Bloom, whose odyssey through the streets of turn-of-the-century Dublin leads him through trials that parallel those of Ulysses on his epic journey home.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780199535675"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0199535671"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 1056,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.6.0.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=4jWS7bMZ1XMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=4jWS7bMZ1XMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=4jWS7bMZ1XMC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=4jWS7bMZ1XMC&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Ulysses.html?hl=&id=4jWS7bMZ1XMC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=4jWS7bMZ1XMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "suMMCgAAQBAJ",
+   "etag": "csmvwiMdVys",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/suMMCgAAQBAJ",
+   "volumeInfo": {
+    "title": "Pride and Prejudice",
+    "authors": [
+     "Jane Austen"
+    ],
+    "publisher": "Booklassic",
+    "publishedDate": "2015-06-29",
+    "description": "Pride And Prejudice, the story of Mrs. Bennet's attempts to marry off her five daughters is one of the best-loved and most enduring classics in English literature. Excitement fizzes through the Bennet household at Longbourn in Hertfordshire when ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9789635255566"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "963525556X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 241,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 11,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.3.4.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=suMMCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=suMMCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=suMMCgAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=suMMCgAAQBAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Pride_and_Prejudice.html?hl=&id=suMMCgAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "7"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 1.99,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 1.99,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=suMMCgAAQBAJ&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1990000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1990000.0,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Pride_and_Prejudice-sample-epub.acsm?id=suMMCgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/Pride_and_Prejudice-sample-pdf.acsm?id=suMMCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=suMMCgAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Y7sOAAAAIAAJ",
+   "etag": "2BPeWoBJ0Dk",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Y7sOAAAAIAAJ",
+   "volumeInfo": {
+    "title": "Alice's Adventures in Wonderland",
+    "authors": [
+     "Lewis Carroll"
+    ],
+    "publishedDate": "1920",
+    "description": "In the most renowned novel by English author Lewis Carroll, restless young Alice literally stumbles into adventure when she follows the hurried, time-obsessed White Rabbit down a hole and into a fantastical realm where animals are quite verbose ...",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "STANFORD:36105004896523"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 200,
+    "printType": "BOOK",
+    "categories": [
+     "Children's stories"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 1545,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.4.4.0.full.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Y7sOAAAAIAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Y7sOAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=Y7sOAAAAIAAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Y7sOAAAAIAAJ&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Alice_s_Adventures_in_Wonderland.html?hl=&id=Y7sOAAAAIAAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "16"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FREE",
+    "isEbook": true,
+    "buyLink": "http://books.google.com/books?id=Y7sOAAAAIAAJ&hl=&buy=&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": true,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "downloadLink": "http://books.google.com/books/download/Alice_s_Adventures_in_Wonderland.epub?id=Y7sOAAAAIAAJ&hl=&output=epub&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "downloadLink": "http://books.google.com/books/download/Alice_s_Adventures_in_Wonderland.pdf?id=Y7sOAAAAIAAJ&hl=&output=pdf&sig=ACfU3U0LJuWczqOh8hN2H4-DDF1Ym-Vr7g&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=Y7sOAAAAIAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+    "quoteSharingAllowed": false
+   }
+  }
+ ]
+}

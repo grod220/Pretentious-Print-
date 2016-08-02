@@ -45,25 +45,28 @@ router.post('/commitOrder', function(req, res, next) {
   .then(function(charge) {
     return Order.findById(req.session.cartId)
   })
+  .catch(function(err) {
+    res.status(401).send(err);
+  })
   .then(function(ord) {
     return ord.update(req.body.upObj)
   })
   .then (function(reslt) {
     let upArr = []
     reslt.products.forEach(function (prod) {
-      prod.update({inventory: prod.inventory - prod.lineItem.quantity})
+      upArr.push(prod.update({inventory: prod.inventory - prod.lineItem.quantity}))
       });
     return Promise.all(upArr);
   })
   .then(function() {
-    Order.getTheCartId(req.user.id)
+    Order.getTheCartId(req.user.id, req.sessionID, req.session.cartId)
     .then(function(id) {
       req.session.cartId = id;
       res.sendStatus(200);
     })
   })
   .catch(function(err) {
-    res.status(401).send(err);
+    next();
   })
 })
 

@@ -19,7 +19,7 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl,
   getData();
   $scope.zipPattern = "\\d{5}(-\\d{4})?";
   $scope.inProcess = false;
- 
+
  // Handle order placement.
   $scope.placeOrder = function () {
     $scope.inProcess = true;
@@ -53,14 +53,20 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl,
 
     CartFactory.commitOrder(stripeObj, upObj)
     .then(function (res) {
+  console.log('++++ commitOrder returned from the server:', res);
       if (res.status !== 200) {
-        growl.error(res.data.message, {title: res.data.code,ttl: 3000, disableCountDown: true});
+        if (res.data.message) {
+          growl.error(res.data.message, {title: res.data.code,ttl: 3000, disableCountDown: true});
+        } else {
+          growl.error(res.data, {title: "Unknown error", ttl: 3000, disableCountDown: true});
+        }
         $scope.inProcess = false;
       } else {
-        growl.success("The credit card info was accepted", {ttl: 5000, disableCountDown: true});       
-        growl.success("Your order has been completed.", {ttl: 7000, disableCountDown: true});
+         growl.success("The credit card info was accepted", {ttl: 5000, disableCountDown: true});
+         growl.success("Your order has been completed.", {ttl: 7000, disableCountDown: true});
 //        $scope.inProcess = false;
-        $state.go('home');
+ //       $state.go('home');
+         growl.success('This was after the state.go', {ttl: 7000, disableCountDown: true});
       }
     })
   };

@@ -38,8 +38,12 @@
           </h5>
             <small>Price: {{ product.price / 100 | currency }}/each</small>
             <div class="row">
-              <input class="form-control col-xs-4 quantity" type="number" ng-model="quantity" min="1" required>
-              <button class="btn btn-default" ng-click="addToCart(product.id, quantity)">Add to Cart</button>
+              <div class="col-xs-offset-3 col-xs-3">
+                <input class="form-control quantity" type="number" ng-model="quantity" min="1" required>
+              </div>
+              <div class="col-xs-3">
+                <button class="btn btn-default" ng-click="addToCart(product.id, quantity)">Add to Cart</button>
+              </div>
             </div>
         </div>
       </div>

@@ -16,10 +16,10 @@ app.controller('productPageCtrl', function($scope, $log, ProductFactory, $stateP
 
   ProductFactory.getOne($scope.id)
   .then(function(product) {
-    $scope.data = product;
+    $scope.data = product;  //not descriptive, use better variable names
     return ProductFactory.getReviews($scope.id)
   })
-  .then(function(reviews) {
+  .then(function(reviews) { //why two ajax requests? Promise.all??
     $scope.data.reviews = reviews;
   })
   .catch($log.error);

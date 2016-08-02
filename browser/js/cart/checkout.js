@@ -1,4 +1,4 @@
-app.config(function ($stateProvider) {
+1app.config(function ($stateProvider) {
     $stateProvider.state('checkout', {
         url: '/checkout',
         templateUrl: 'js/cart/checkout.html',
@@ -16,14 +16,14 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl,
     .catch($log.error);
   };
 
-  getData();
+  getData(); //resove block?
   $scope.zipPattern = "\\d{5}(-\\d{4})?";
   $scope.inProcess = false;
  
  // Handle order placement.
   $scope.placeOrder = function () {
     $scope.inProcess = true;
-    let stripeObj = {
+    let stripeObj = { //check out angular-stripe 
       amount: $scope.data.total,
       currency: "usd",
       source: {
@@ -53,7 +53,7 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl,
 
     CartFactory.commitOrder(stripeObj, upObj)
     .then(function (res) {
-      if (res.status !== 200) {
+      if (res.status !== 200) { //what would the status be?
         growl.error(res.data.message, {title: res.data.code,ttl: 3000, disableCountDown: true});
         $scope.inProcess = false;
       } else {

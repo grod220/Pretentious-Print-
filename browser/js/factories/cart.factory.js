@@ -5,12 +5,12 @@ app.factory('CartFactory', function($http, $log) {
     let factory = {};
     let baseRoute = "/api/cart/";
 
-    let toData = function(result) { return result.data; };
+    let toData = function(result) { return result.data; }; // maybe inject this function as factory itself for reusability
 
     factory.getCart = function() {
         return $http.get(baseRoute)
         .then(toData)
-        .catch($log.error);
+        .catch($log.error); // check controller error 
     };
 
     factory.addItem = function(product, qty) {
@@ -32,9 +32,9 @@ app.factory('CartFactory', function($http, $log) {
         let args={stripeObj: stripeObj, upObj: upObj}
         return $http.post(baseRoute + '/commitOrder', args)
         .then(function(res) {
-            return res;
+            return res; //useless
         })
-        .catch(function (err) {
+        .catch(function (err) { //refactor to handle 401 separately
             return err;
         });
     };

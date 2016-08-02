@@ -13,23 +13,23 @@ app.controller('homeCtrl', function($scope, $http, $log, CartFactory, ProductFac
   ProductFactory.getAll()
   .then(function(result) {
      $scope.products = result;
-  });
+  }); //USE RESOLVES!!
 
   $scope.addToCart = function(productId, quantity){
     CartFactory.addItem(productId, quantity)
-    .catch($log.error);
+    .catch($log.error); //use growl to give users feedback
   };
 
 });
 
-app.filter('unique', function() {
+app.filter('unique', function() { //nice custom filter maybe
   return function(products, property) {
     if (products === undefined) { return; }
     var output = [];
     products.forEach(function(product) {
       var add = true;
       for (var i = 0; i < output.length; i++) {
-        if (output[i][property] === product[property]) {
+        if (output[i][property] === product[property]) { //maybe refactor? how about reduce?
           add = false;
         }
       }
@@ -43,7 +43,7 @@ app.filter('unique', function() {
 
 app.filter('addDeselect', function() {
   return function(products) {
-    products.unshift("");
+    products.unshift(""); //maybe better way of doing this. ng-options for empty option?
     return products;
   }
 })
@@ -55,7 +55,7 @@ app.filter('productFilter', function() {
     }
 
     return products.filter(function(product) {
-      var aBool = author ? product.author === author : true;
+      var aBool = author ? product.author === author : true; 
       var pBool = pretention ? product.pretentionLevel == pretention : true;
       var cBool = condition ? product.condition === condition : true;
 

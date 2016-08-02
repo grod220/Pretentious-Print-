@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #fdfdfd;
-}
-
 @mixin clearfix {
   &:after {
     content: "";
@@ -14,9 +10,13 @@ body {
   }
 }
 
+body {
+  /*background-color: hsla(25, 41%, 55%, 1.0);*/
+  background-image: url("/styleFiles/pattern.jpg");
+}
+
 #main {
   margin: 0 auto;
-  background-color: hsla(25, 41%, 55%, 1.0);
 }
 
 @import 'directives/main';

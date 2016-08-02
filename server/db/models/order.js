@@ -52,7 +52,9 @@ var Order = db.define('order', {
 {
   classMethods: {
     getTheCartId: function(user, sessionID, cartId) {
-      if (cartId) { return Promise.resolve(cartId); }
+      if (cartId) { 
+        return Promise.resolve(cartId); 
+      }
       if (user && user.id) {
         return Order.findOrCreate(
           {where: {userId: user.id, status: 'created'},

@@ -46,7 +46,8 @@ router.post('/commitOrder', function(req, res, next) {
     return Order.findById(req.session.cartId)
   })
   .catch(function(err) {
-    res.status(401).send(err);
+    res.status(401).send(err)
+    throw(err);
   })
   .then(function(ord) {
     return ord.update(req.body.upObj)
@@ -59,14 +60,19 @@ router.post('/commitOrder', function(req, res, next) {
     return Promise.all(upArr);
   })
   .then(function() {
-    Order.getTheCartId(req.user.id, req.sessionID, req.session.cartId)
+    // Pass null cartId so that it will give us a new one
+    Order.getTheCartId(req.user, req.sessionID, null)
     .then(function(id) {
       req.session.cartId = id;
       res.sendStatus(200);
     })
   })
   .catch(function(err) {
-    next();
+    console.log();
+    console.log(err);
+    console.log();
+    res.returnStatus(500);
+    throw err;
   })
 })
 

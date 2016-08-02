@@ -5,6 +5,7 @@ navbar {
 .imageInNav {
    position: relative;
    width: 100%; /* for IE 6 */
+   /*margin-bottom: 20px;*/
 }
 
 .imageInNav2 {
@@ -12,8 +13,18 @@ navbar {
    background-image: url(/styleFiles/inspiration.jpg);
    background-position: top;
    background-color: black;
+   /*margin-bottom: 20px;*/
+
 }
 
+.borderOfNav {
+  height: 80px;
+  background-image: url(/styleFiles/border.png);
+  /*width: 1000px;*/
+  background-position: top;
+  margin: 0px;
+  /*background-repeat: no-repeat;*/
+}
 
 .altNav {
    position: absolute;
@@ -27,12 +38,30 @@ navbar {
     margin: 0 20px 0 20px;
     a {
       color: white;
-      font-size: 30px;
+      font-size: 28px;
       font-family: 'Old Standard TT', serif;
       text-decoration: none;
+    }
+    .siteName {
+      padding-right: 10px;
+      font-variant: small-caps;
     }
     a:hover {
       color: #899299;
     }
   }
+}
+
+body {
+  background: -moz-linear-gradient(90deg, #000000 0%, #25201a 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #25201a), color-stop(100%, #000000)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #000000 0%, #25201a 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #000000 0%, #25201a 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #000000 0%, #25201a 100%); /* ie10+ */
+  background: linear-gradient(0deg, #000000 0%, #25201a 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25201a', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+
+  background-size: 150px;
+    background-repeat: repeat-x;
+    background-color: #000000;
 }

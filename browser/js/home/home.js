@@ -8,6 +8,8 @@ app.config(function ($stateProvider) {
 
 app.controller('homeCtrl', function($scope, $http, $log, CartFactory, ProductFactory) {
 
+  $scope.quantity = 1;
+
   ProductFactory.getAll()
   .then(function(result) {
      $scope.products = result;

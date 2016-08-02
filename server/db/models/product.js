@@ -22,11 +22,7 @@ module.exports = db.define('product', {
         allowNull: true
     },
     pretentionLevel: {
-        type: Sequelize.INTEGER,
-        validate: {
-            min: 1,
-            max: 10
-        }
+        type: Sequelize.STRING
     },
     title: {
         type: Sequelize.STRING

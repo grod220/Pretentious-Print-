@@ -51,13 +51,13 @@ var Order = db.define('order', {
 },
 {
   classMethods: {
-    getTheCartId: function(user, sessionID) {
-      if(user && user.id) {
+    getTheCartId: function(user, sessionID, cartId) {
+      if (cartId) { return Promise.resolve(cartId); }
+      if (user && user.id) {
         return Order.findOrCreate(
-          {where: {userId: userId, status: 'created'},
+          {where: {userId: user.id, status: 'created'},
             defaults: {sessionId: null}})
         .spread(function(order, crt) {
-  console.log("Returning cart", order.id, "by userid", user.id)
           return order.id;
         })
       } else {
@@ -65,8 +65,7 @@ var Order = db.define('order', {
           {where: {sessionID: sessionID, status: 'created'},
           defaults: {userID: null}})
         .spread(function(order, crt) {
-    console.log("Returning cart", order.id, "by session", sessionID)
-                  return order.id;
+          return order.id;
         })
 
       }

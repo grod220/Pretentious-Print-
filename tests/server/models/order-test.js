@@ -20,9 +20,10 @@ describe('Order class method', function () {
     return db.sync({force: true});
   });
 
- 
+
   describe('Class methods', function(){
   let dummyUserId = 7;
+  let dummyUser;
   let existing;
   let theUser = {
     id: dummyUserId,
@@ -38,7 +39,7 @@ describe('Order class method', function () {
    beforeEach(function (done) {
       User.create(theUser)
       .then(function(user) {
-        dummyUserId = user.id;
+        dummyUser = user;
         done();
       })
     });
@@ -47,7 +48,7 @@ describe('Order class method', function () {
     describe('getTheCartId', function(){
 
       it('Creates a new cart if there is not one for that user', function(done){
-        return Order.getTheCartId(dummyUserId)
+        return Order.getTheCartId(dummyUser)
           .then(function(result) {
             expect(result).to.equal(1);
             done();
@@ -58,7 +59,7 @@ describe('Order class method', function () {
         Order.create(defOrder)
         .then(function(cart) {
           existing = cart;
-          Order.getTheCartId(dummyUserId)
+          Order.getTheCartId(dummyUser)
           .then(function(result) {
             expect(result).to.equal(existing.id);
             done();

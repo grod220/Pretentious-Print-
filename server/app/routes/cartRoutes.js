@@ -10,7 +10,11 @@ const Product = db.model('product');
 let Promise = require('bluebird');
 
 router.get('/', function (req, res, next) {
-  Order.findById(req.session.cartId)
+    Order.getTheCartId(req.user, req.sessionID, req.session.cartId)
+    .then(function(id) {
+      req.session.cartId = id;
+      return Order.findById(req.session.cartId)
+     })
     .then(function (cart) {
       res.send(cart);
     })
@@ -18,11 +22,15 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-  let gets = [
+  Order.getTheCartId(req.user, req.sessionID, req.session.cartId)
+  .then(function(id) {
+    req.session.cartId = id;
+    let gets = [
     Order.findById(req.session.cartId),
     Product.findById(req.body.productId)
     ];
-  Promise.all(gets)
+    return Promise.all(gets);
+  })
   .spread(function(order, product) {
      return order.addProduct(product, {quantity: req.body.quantity, price: product.price});
    })
@@ -37,38 +45,39 @@ router.post('/', function (req, res, next) {
 });
 
 router.post('/commitOrder', function(req, res, next) {
-  stripe.charges.create(req.body.stripeObj) 
+  stripe.charges.create(req.body.stripeObj)
   .then(function(charge) {
     return Order.findById(req.session.cartId)
+  })
+  .catch(function(err) {
+    res.status(401).send(err)
+    throw(err);
   })
   .then(function(ord) {
     return ord.update(req.body.upObj)
   })
   .then (function(reslt) {
-    console.log("....... Update result was", reslt)
-    console.log()
-    console.log()
     let upArr = []
     reslt.products.forEach(function (prod) {
-      console.log(' product id', prod.id, 'in stock', prod.inventory, 'quantity ordered', prod.lineItem.quantity)
-      prod.update({inventory: prod.inventory - prod.lineItem.quantity})
+      upArr.push(prod.update({inventory: prod.inventory - prod.lineItem.quantity}))
       });
-    console.log();
-    console.log();
     return Promise.all(upArr);
   })
   .then(function() {
-    console.log("=====  Asking for a new cart ID")
-    Order.getTheCartId(req.user.id)
+    // Pass null cartId so that it will give us a new one
+    Order.getTheCartId(req.user, req.sessionID, null)
     .then(function(id) {
       req.session.cartId = id;
-      console.log("------- Got cart ID", id)
       res.sendStatus(200);
     })
   })
   .catch(function(err) {
-    res.status(401).send(err);
-  })  
+    console.log();
+    console.log(err);
+    console.log();
+    res.returnStatus(500);
+    throw err;
+  })
 })
 
 

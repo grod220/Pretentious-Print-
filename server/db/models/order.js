@@ -37,6 +37,9 @@ var Order = db.define('order', {
   stripeAuthorization: {
     type: Sequelize.TEXT
   },
+  sessionID: {
+    type: Sequelize.STRING
+  },
   total: {
     type: Sequelize.VIRTUAL,
     get: function () {
@@ -48,12 +51,26 @@ var Order = db.define('order', {
 },
 {
   classMethods: {
-    getTheCartId: function(userId) {
-      return Order.findOrCreate(
-        {where: {userId: userId, status: 'created'}})
-      .spread(function(order, crt) {
-        return order.id;
-      })
+    getTheCartId: function(user, sessionID, cartId) {
+      if (cartId) { 
+        return Promise.resolve(cartId); 
+      }
+      if (user && user.id) {
+        return Order.findOrCreate(
+          {where: {userId: user.id, status: 'created'},
+            defaults: {sessionId: null}})
+        .spread(function(order, crt) {
+          return order.id;
+        })
+      } else {
+        return Order.findOrCreate(
+          {where: {sessionID: sessionID, status: 'created'},
+          defaults: {userID: null}})
+        .spread(function(order, crt) {
+          return order.id;
+        })
+
+      }
     }
   },
   defaultScope: {

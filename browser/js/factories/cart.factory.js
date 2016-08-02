@@ -1,11 +1,11 @@
 'use strict'
 
 //  Factory for Cart, Order, and Line Item manipulation
-app.factory('CartFactory', function($http, $log) {
+app.factory('CartFactory', function($http, $log, Utils) {
     let factory = {};
     let baseRoute = "/api/cart/";
 
-    let toData = function(result) { return result.data; };
+    let toData = Utils.toData;
 
     factory.getCart = function() {
         return $http.get(baseRoute)
@@ -16,9 +16,7 @@ app.factory('CartFactory', function($http, $log) {
     factory.addItem = function(product, qty) {
         return $http.post(baseRoute,
             {productId: product, quantity: qty})
-        .then(function(res) {
-            return res.data;
-        })
+        .then(toData)
         .catch($log.error);
     };
 

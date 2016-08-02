@@ -10,7 +10,11 @@ const Product = db.model('product');
 let Promise = require('bluebird');
 
 router.get('/', function (req, res, next) {
-  Order.findById(req.session.cartId)
+    Order.getTheCartId(req.user, req.sessionID, req.session.cartId)
+    .then(function(id) {
+      req.session.cartId = id;
+      return Order.findById(req.session.cartId)
+     })
     .then(function (cart) {
       res.send(cart);
     })

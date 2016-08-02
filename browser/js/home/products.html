@@ -1,22 +1,22 @@
 <img class="imageInNav" src="/styleFiles/inspiration.jpg">
 <navbar></navbar>
 
-
+<div class="container">
 <div class="row">
-<div class="filterBox col-md-offset-3 col-md-6 text-center well well-lg">
+<div class="filterBox text-center well well-lg">
 <section class="products">
     <!-- <fullstack-logo></fullstack-logo> -->
     <!-- <img ng-src="{{ url }}"> -->
       <label>Author:
-        <select ng-model="selectedAuthor">
+        <select class="form-control" ng-model="selectedAuthor">
           <option ng-repeat="product in products | unique:'author' | orderBy:'author'">{{ product.author }}</select>
       </label>
       <label>Pretentiousness:
-        <select ng-model="selectedPretention">
+        <select class="form-control" ng-model="selectedPretention">
           <option ng-repeat="product in products | unique:'pretentionLevel' | orderBy:'pretentionLevel'">{{ product.pretentionLevel }}</select>
       </label>
       <label>Condition:
-        <select ng-model="selectedCondition">
+        <select class="form-control" ng-model="selectedCondition">
           <option ng-repeat="product in products | unique:'condition' | orderBy:'condition'">{{ product.condition }}</select>
       </label>
     </div>
@@ -26,20 +26,23 @@
 
 
 
-    <h1>Available Titles</h1>
+    <h1 class="lead">Available Titles</h1>
     <h2>The most stupendous works!</h2>
 
     <div class="row">
-      <div class="col-xs-4" ng-repeat="product in products | productFilter:selectedAuthor:selectedPretention:selectedCondition">
+      <div class="col-md-4 col-sm-6 col-xs-12 text-center" ng-repeat="product in products | productFilter:selectedAuthor:selectedPretention:selectedCondition">
         <a ui-sref="productPage({productId: product.id})"><img class="product-img" ng-src="{{ product.image }}"></a>
         <div class="caption">
           <h5>
             <span>{{ product.title }}</span>
           </h5>
-            <small>Price: {{ product.price / 100 | currency }} each</small>
-            <button ng-click="addToCart(product.id, quantity)">Add to Cart</button>
-            <input type="number" ng-model="quantity" min="1" required>
+            <small>Price: {{ product.price / 100 | currency }}/each</small>
+            <div class="row">
+              <input class="form-control col-xs-4 quantity" type="number" ng-model="quantity" min="1" required>
+              <button class="btn btn-default" ng-click="addToCart(product.id, quantity)">Add to Cart</button>
+            </div>
         </div>
       </div>
     </div>
 </section>
+</div>

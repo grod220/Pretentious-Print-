@@ -37,10 +37,16 @@ app.filter('unique', function() {
         output.push(product);
       }
     });
-    output.unshift("");
     return output;
   }
 });
+
+app.filter('addDeselect', function() {
+  return function(products) {
+    products.unshift("");
+    return products;
+  }
+})
 
 app.filter('productFilter', function() {
   return function(products, author, pretention, condition) {

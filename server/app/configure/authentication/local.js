@@ -46,7 +46,7 @@ module.exports = function (app, db) {
             req.logIn(user, function (loginErr) {
                 if (loginErr) return next(loginErr);
                 // Attach the cart ID to the session object
-                Order.getTheCartId(req.user.id)
+                Order.getTheCartId(req.user, req.sessionID)
                 .then(function(id) {
                     req.session.cartId = id;
                     res.status(200).send({

@@ -13,6 +13,8 @@
 body {
   /*background-color: hsla(25, 41%, 55%, 1.0);*/
   background-image: url("/styleFiles/pattern.jpg");
+  font-family: 'Old Standard TT', serif;
+  font-size: 20px;
 }
 
 #main {
@@ -26,3 +28,4 @@ body {
 @import 'login/main';
 @import 'cart/main';
 @import 'navbar/main';
+@import 'productPage/main';

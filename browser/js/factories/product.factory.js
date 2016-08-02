@@ -1,11 +1,11 @@
 'use strict'
 
 //  Factory for Product manipulation
-app.factory('ProductFactory', function($http, $log) {
+app.factory('ProductFactory', function($http, $log, Utils) {
     let factory = {};
     let baseRoute = "/api/products/";
 
-    let toData = function(result) { return result.data; };
+    let toData = Utils.toData;
 
     factory.getOne = function(id) {
         return $http.get(baseRoute + id.toString())

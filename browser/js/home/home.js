@@ -41,6 +41,13 @@ app.filter('unique', function() {
   }
 });
 
+app.filter('addDeselect', function() {
+  return function(products) {
+    products.unshift("");
+    return products;
+  }
+})
+
 app.filter('productFilter', function() {
   return function(products, author, pretention, condition) {
     if (!author && !pretention && !condition) {

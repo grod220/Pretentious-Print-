@@ -9,15 +9,15 @@
     <!-- <img ng-src="{{ url }}"> -->
       <label>Author:
         <select class="form-control" ng-model="selectedAuthor">
-          <option ng-repeat="product in products | unique:'author' | orderBy:'author'">{{ product.author }}</select>
+          <option ng-repeat="product in products | unique:'author' | orderBy:'author' | addDeselect">{{ product.author }}</select>
       </label>
       <label>Pretentiousness:
         <select class="form-control" ng-model="selectedPretention">
-          <option ng-repeat="product in products | unique:'pretentionLevel' | orderBy:'pretentionLevel'">{{ product.pretentionLevel }}</select>
+          <option ng-repeat="product in products | unique:'pretentionLevel' | orderBy:'pretentionLevel' | addDeselect">{{ product.pretentionLevel }}</select>
       </label>
       <label>Condition:
         <select class="form-control" ng-model="selectedCondition">
-          <option ng-repeat="product in products | unique:'condition' | orderBy:'condition'">{{ product.condition }}</select>
+          <option ng-repeat="product in products | unique:'condition' | orderBy:'condition' | addDeselect">{{ product.condition }}</select>
       </label>
     </div>
 </div>

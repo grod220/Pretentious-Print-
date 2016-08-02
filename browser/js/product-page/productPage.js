@@ -6,11 +6,14 @@ app.config(function($stateProvider) {
   });
 });
 
-app.controller('productPageCtrl', function($scope, $log, ProductFactory, $stateParams, CartFactory) {
+app.controller('productPageCtrl', function($scope, $log, ProductFactory, $stateParams, CartFactory, growl) {
   $scope.id = $stateParams.productId;
 
   $scope.addToCart = function(productId, quantity){
     CartFactory.addItem(productId, quantity)
+    .then(function() {
+      growl.success("Added a splendid work to your cart", {ttl: 4000, disableCountDown: true});
+    })
     .catch($log.error);
   };
 
@@ -24,4 +27,11 @@ app.controller('productPageCtrl', function($scope, $log, ProductFactory, $stateP
   })
   .catch($log.error);
 
-})
+  // $scope.starHTML = function(num) {
+  //   var toReturn = '';
+  //   for (var i=0; i<num; i++) {
+  //     toReturn += '<span class="glyphicon glyphicon-star" aria-hidden="true"></span>';
+  //   }
+  //   return toReturn;
+  // };
+});

@@ -6,7 +6,7 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('homeCtrl', function($scope, $http, $log, CartFactory, ProductFactory) {
+app.controller('homeCtrl', function($scope, $http, $log, CartFactory, ProductFactory, growl) {
 
   $scope.quantity = 1;
 
@@ -14,11 +14,15 @@ app.controller('homeCtrl', function($scope, $http, $log, CartFactory, ProductFac
   .then(function(result) {
      $scope.products = result;
   });
-
   $scope.addToCart = function(productId, quantity){
     CartFactory.addItem(productId, quantity)
+    .then(function() {
+      growl.success("Added a splendid work to your cart", {ttl: 4000, disableCountDown: true});
+    })
     .catch($log.error);
   };
+
+
 
 });
 

@@ -23,7 +23,7 @@ navbar {
   /*width: 1000px;*/
   background-position: top;
   margin: 0px;
-  /*background-repeat: no-repeat;*/
+  margin-bottom: 20px;
 }
 
 .altNav {
@@ -50,18 +50,4 @@ navbar {
       color: #899299;
     }
   }
-}
-
-body {
-  background: -moz-linear-gradient(90deg, #000000 0%, #25201a 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #25201a), color-stop(100%, #000000)); /* safari4+,chrome */
-  background: -webkit-linear-gradient(90deg, #000000 0%, #25201a 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(90deg, #000000 0%, #25201a 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(90deg, #000000 0%, #25201a 100%); /* ie10+ */
-  background: linear-gradient(0deg, #000000 0%, #25201a 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25201a', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
-
-  background-size: 150px;
-    background-repeat: repeat-x;
-    background-color: #000000;
 }

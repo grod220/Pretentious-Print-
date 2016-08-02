@@ -1,0 +1,27 @@
+.prodImg {
+  min-height: 350px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.titleL {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.prodDetail {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bolder {
+  font-weight: bold;
+}
+
+.reviews {
+  margin-top: 30px;
+  .singleReview{
+    margin-top:40px;
+  }
+}

@@ -9,9 +9,14 @@ app.config(function ($stateProvider) {
 
 });
 
-app.controller('AboutController', function ($scope, FullstackPics) {
+app.controller('AboutController', function ($scope, FullstackPics, ProductFactory) {
 
     // Images of beautiful Fullstack people.
-    $scope.images = _.shuffle(FullstackPics);
+    ProductFactory.getAll()
+      .then(function(products) {
+        $scope.images = products.map(function(prod) {
+          return prod.image;
+        })
+      })
 
 });

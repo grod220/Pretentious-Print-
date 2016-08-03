@@ -19,6 +19,10 @@
         <select class="form-control" ng-model="selectedCondition">
           <option ng-repeat="product in products | unique:'condition' | orderBy:'condition' | addDeselect">{{ product.condition }}</select>
       </label>
+      <label>Price Range:
+        <select class="form-control" ng-model="selectedPrice">
+          <option ng-repeat="range in priceRanges">{{ range }}</select>
+      </label>
     </div>
 </div>
 
@@ -31,7 +35,7 @@
  <!-- <h3>The most pretentious of works!</h3> -->
 
     <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12 text-center book" ng-repeat="product in products | productFilter:selectedAuthor:selectedPretention:selectedCondition">
+      <div class="col-md-4 col-sm-6 col-xs-12 text-center book" ng-repeat="product in products | productFilter:selectedAuthor:selectedPretention:selectedCondition:selectedPrice">
         <a ui-sref="productPage({productId: product.id})"><img class="product-img" ng-src="{{ product.image }}"></a>
         <div class="caption">
           <h5>

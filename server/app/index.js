@@ -14,6 +14,12 @@ module.exports = function (db) {
     app.use('/api', require('./routes'));
 
 
+    app.get('/github', function(req, res, next) {
+        console.log("==== Sending someone to the github route =======")
+        res.redirect('https://github.com/grod220/Pretentious-Print-');
+    })
+
+
     /*
      This middleware will catch any URLs resembling a file extension
      for example: .js, .html, .css

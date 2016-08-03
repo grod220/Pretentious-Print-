@@ -64,9 +64,7 @@ app.controller('checkoutCtrl', function($scope, $http, $log, CartFactory, growl,
       } else {
          growl.success("The credit card info was accepted", {ttl: 5000, disableCountDown: true});
          growl.success("Your order has been completed.", {ttl: 7000, disableCountDown: true});
-//        $scope.inProcess = false;
- //       $state.go('home');
-         growl.success('This was after the state.go', {ttl: 7000, disableCountDown: true});
+       $state.go('home', { successfulCheckout: true });
       }
     })
   };
